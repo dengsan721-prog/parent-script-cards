@@ -1,0 +1,4567 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>幸福驿站亲子话术速查卡</title>
+  <style>
+    :root { --ink:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7; --soft:#f5f7f6; --panel:#fff; --brand:#167765; --brand2:#246a9b; --warm:#f5bd46; --risk:#9d3b0b; --risk-bg:#fff7ed; --shadow:0 18px 50px rgba(0,0,0,.08); }
+    * { box-sizing:border-box; } body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:radial-gradient(circle at 20% 0%,#ffffff 0,#f5f7f6 34%,#eef3f1 100%); } button,input { font:inherit; } button { cursor:pointer; }
+    .app-shell { max-width:880px; margin:0 auto; padding:28px 16px 52px; } .topbar { display:flex; align-items:center; gap:10px; min-height:44px; margin-bottom:18px; } .topbar strong { font-size:16px; } .brand-mark { width:32px; height:32px; border-radius:8px; display:grid; place-items:center; background:linear-gradient(180deg,#17856f,#116f60); color:#fff; font-weight:800; box-shadow:0 8px 18px rgba(17,111,96,.20); } .back-btn { width:38px; height:38px; border:1px solid rgba(29,29,31,.10); background:rgba(255,255,255,.86); border-radius:8px; color:var(--ink); box-shadow:0 6px 18px rgba(0,0,0,.05); }
+    .hero { padding:12px 0 4px; } .eyebrow { margin:0 0 10px; color:var(--brand); font-weight:700; } .hero-title { font-size:32px; line-height:1.16; margin:0 0 12px; letter-spacing:0; } .hero-copy,.summary { color:var(--muted); line-height:1.65; } .stats { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:18px 0; } .stat { background:rgba(255,255,255,.76); border:1px solid rgba(29,29,31,.08); border-radius:8px; padding:12px; box-shadow:0 10px 28px rgba(0,0,0,.05); } .stat strong { display:block; font-size:24px; color:var(--brand); }
+    .entry-grid { display:grid; gap:12px; margin-top:18px; } .entry-button { min-height:96px; border:1px solid rgba(29,29,31,.08); border-radius:8px; padding:18px; text-align:left; background:rgba(255,255,255,.88); color:var(--ink); box-shadow:var(--shadow); transition:transform .16s ease, box-shadow .16s ease; } .entry-button:hover,.result-card:hover,.preview-problem:hover,.chip:hover { transform:translateY(-1px); } .entry-button strong { display:block; font-size:22px; margin-bottom:8px; } .entry-cta { display:inline-block; margin-left:6px; padding:3px 7px; border-radius:8px; background:#167765; color:#fff; font-size:13px; font-style:normal; vertical-align:middle; } .entry-button span { color:var(--muted); line-height:1.5; } .entry-button.primary { border-color:rgba(22,119,101,.22); } .entry-button.secondary { border-color:rgba(36,106,155,.20); }
+    .soft-note { margin:18px 0 0; padding:12px; border-left:4px solid var(--warm); background:rgba(255,255,255,.78); border-radius:8px; color:#6c5623; line-height:1.55; } .toolbar { position:sticky; top:0; z-index:10; padding:10px 0; background:rgba(245,247,246,.86); backdrop-filter:blur(18px); } .search-box { width:100%; border:1px solid rgba(29,29,31,.10); border-radius:8px; padding:13px 14px; background:rgba(255,255,255,.92); color:var(--ink); outline:none; } .search-box:focus { border-color:rgba(22,119,101,.52); box-shadow:0 0 0 4px rgba(22,119,101,.10); }
+    .segmented,.chips { display:flex; gap:8px; overflow-x:auto; padding:10px 0 2px; } .seg-btn,.chip { flex:0 0 auto; padding:9px 12px; border:1px solid rgba(29,29,31,.09); background:rgba(255,255,255,.78); border-radius:8px; color:var(--ink); transition:transform .16s ease, background .16s ease; } .seg-btn.active,.chip.active { color:#fff; background:var(--brand); border-color:var(--brand); }
+    .section-title { margin:20px 0 10px; font-size:20px; } .card-list { display:grid; gap:10px; } .result-card { width:100%; border:1px solid rgba(29,29,31,.08); border-radius:8px; padding:14px; text-align:left; background:rgba(255,255,255,.88); color:var(--ink); box-shadow:0 10px 30px rgba(0,0,0,.05); } .result-card h3 { margin:6px 0 8px; font-size:17px; line-height:1.35; } .waterfall-list { column-count:2; column-gap:10px; } .waterfall-item { display:inline-block; width:100%; margin:0 0 10px; break-inside:avoid; border:1px solid rgba(29,29,31,.08); border-radius:8px; padding:11px 12px; text-align:left; background:rgba(255,255,255,.9); color:var(--ink); box-shadow:0 8px 22px rgba(0,0,0,.05); } .waterfall-item h3 { margin:7px 0 6px; font-size:15px; line-height:1.35; } .waterfall-item .summary { margin:0; font-size:13px; line-height:1.45; } .meta { display:flex; flex-wrap:wrap; gap:6px; align-items:center; color:var(--muted); font-size:13px; } .pill { border-radius:8px; padding:3px 7px; background:#edf6f3; color:var(--brand); } .pill.topic { background:#edf4fb; color:var(--brand2); }
+    .category-block { margin:18px 0; } .category-head { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin:0 0 8px; } .category-head h2 { margin:0; font-size:19px; } .category-head span { color:var(--muted); font-size:13px; } .detail { background:rgba(255,255,255,.9); border:1px solid rgba(29,29,31,.08); border-radius:8px; padding:16px; box-shadow:var(--shadow); } .detail h1 { margin:8px 0 12px; font-size:24px; line-height:1.25; letter-spacing:0; }
+    .script-list { display:grid; gap:9px; padding:0; margin:10px 0; list-style:none; } .script-list li { padding:11px; background:var(--soft); border-radius:8px; line-height:1.65; } .copy-btn,.mini-btn { width:100%; padding:12px 14px; margin-top:14px; border:0; border-radius:8px; background:var(--ink); color:#fff; } .mini-btn { width:auto; margin-top:0; background:var(--brand2); } .risk-note { margin:12px 0; padding:12px; border:1px solid #f2c28a; border-radius:8px; background:var(--risk-bg); color:var(--risk); line-height:1.55; } .empty { padding:24px 12px; text-align:center; color:var(--muted); } .toast { position:fixed; left:50%; bottom:22px; transform:translateX(-50%); background:#1d1d1f; color:#fff; padding:10px 14px; border-radius:8px; opacity:0; pointer-events:none; transition:opacity .2s ease; } .toast.show { opacity:1; }
+    .primary-search-panel { margin:24px 0 16px; padding:16px; border:1px solid rgba(255,255,255,.72); border-radius:8px; background:rgba(255,255,255,.78); box-shadow:0 24px 70px rgba(0,0,0,.10); backdrop-filter:blur(22px); } .home-search-row { display:grid; grid-template-columns:1fr auto; gap:10px; align-items:center; } .home-search-input { min-width:0; width:100%; border:1px solid rgba(29,29,31,.10); border-radius:8px; padding:15px 14px; background:#fff; color:var(--ink); outline:none; box-shadow:inset 0 1px 0 rgba(255,255,255,.8); } .home-search-input:focus { border-color:rgba(22,119,101,.5); box-shadow:0 0 0 4px rgba(22,119,101,.10); } .home-search-button { border:0; border-radius:8px; padding:15px 17px; background:#167765; color:#fff; font-weight:700; white-space:nowrap; box-shadow:0 10px 22px rgba(22,119,101,.18); } .quick-grid { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; } .quick-grid .chip { background:#fbfbfd; }
+    .answer-first-panel { margin:16px 0; padding:16px; border:1px solid rgba(29,29,31,.08); border-radius:8px; background:rgba(255,255,255,.72); box-shadow:0 14px 40px rgba(0,0,0,.06); } .answer-first-panel .entry-button { box-shadow:none; min-height:76px; } .preview-problems { display:grid; gap:8px; margin-top:12px; } .preview-problem { display:flex; justify-content:space-between; gap:10px; align-items:center; width:100%; padding:11px 12px; border:1px solid rgba(29,29,31,.08); border-radius:8px; background:#fff; color:var(--ink); text-align:left; } .preview-problem span { color:var(--muted); font-size:13px; }
+    .aux-topic-panel { margin:18px 0 0; padding:14px; border:1px solid rgba(36,106,155,.13); border-radius:8px; background:rgba(247,250,252,.78); color:#31465a; } .aux-topic-panel h2 { margin:0 0 6px; font-size:18px; } .aux-topic-panel p { margin:0 0 10px; color:#617382; line-height:1.55; }
+    @media (min-width:720px) { .app-shell { padding:34px 22px 68px; } .entry-grid { grid-template-columns:1fr 1fr; } .hero-title { font-size:44px; } .card-list.two { grid-template-columns:repeat(2,1fr); } .waterfall-list { column-count:3; } }
+  </style>
+</head>
+<body>
+  <main id="app" class="app-shell"></main>
+  <div id="toast" class="toast">已复制</div>
+  <script id="card-data">
+    const RESPONSE_CATEGORIES = [
+  "学习作业",
+  "手机网络",
+  "校园情况",
+  "同伴社交",
+  "亲子沟通",
+  "规则边界",
+  "情绪行为",
+  "青春期",
+  "父母成长",
+  "安全危机场景"
+];
+    const TOPIC_CATEGORIES = [
+  "了解孩子",
+  "自我认知",
+  "幸福与家庭",
+  "表达与想象",
+  "社交与共情",
+  "规则与能力",
+  "安全与情绪"
+];
+    const RESPONSE_CARDS = [
+  {
+    "id": 1,
+    "type": "response_card",
+    "title": "父母一说话孩子就嫌烦",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "你长大了，我相信你有自己的判断和想法，妈妈爸爸相信你可以做得很好。",
+    "scripts": [
+      "你长大了，我相信你有自己的判断和想法，妈妈爸爸相信你可以做得很好。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 2,
+    "type": "response_card",
+    "title": "为什么每天都要上学",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "你这个问题问得好！让你产生这种思考的原因是什么呢？",
+    "scripts": [
+      "你这个问题问得好！让你产生这种思考的原因是什么呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 3,
+    "type": "response_card",
+    "title": "写作业总是不专心",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "如果孩子不安心学习，比较浮躁，不要责备孩子，可以对孩子说，你安安静静，路踏实 实写作业，妈妈就在厨房做饭，你需要妈妈...",
+    "scripts": [
+      "如果孩子不安心学习，比较浮躁，不要责备孩子，可以对孩子说，你安安静静，路踏实 实写作业，妈妈就在厨房做饭，你需要妈妈的时候儿喊我一声，我都在，然后拥抱或亲 吻一下孩子，把孩子房间的门带上。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 4,
+    "type": "response_card",
+    "title": "如果孩子作业写不好或者老出错",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "可以给孩子说没关系，多练习几次就会好起来，每个人都是耐心练习很多遍才能做好， 做对的，妈妈相信你会很棒的。",
+    "scripts": [
+      "可以给孩子说没关系，多练习几次就会好起来，每个人都是耐心练习很多遍才能做好， 做对的，妈妈相信你会很棒的。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 5,
+    "type": "response_card",
+    "title": "孩子总是玩到很晚才开始写作业",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "每天晚上都像打仗，我知道你玩起来很开心，但是作业也要完成，你打算怎么安排你的 时间？妈妈需要你十点上床睡觉，现在是下...",
+    "scripts": [
+      "每天晚上都像打仗，我知道你玩起来很开心，但是作业也要完成，你打算怎么安排你的 时间？妈妈需要你十点上床睡觉，现在是下午六点，你有四个小时的时间，你自己评估 一下写作业要几点到几点。告诉妈妈，那么这个时间就给你自己安排。",
+      "妈妈知道你想让我们多陪陪你，我把手头上在做的事情做完就陪你玩儿，大概需要一个 小时或其他具体的时间，这个时间你能做完你的作业吗？妈妈说到做到，拉勾儿，如果 需要妈妈或者爸爸陪你学习，你就叫我们啊。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 6,
+    "type": "response_card",
+    "title": "孩子写作业敷衍了事",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "孩于放学回家后的心情会影响到他写作业的状态，不能过于兴奋，更不能让孩子烦躁和受挫。",
+    "scripts": [
+      "孩于放学回家后的心情会影响到他写作业的状态，不能过于兴奋，更不能让孩子烦躁和受挫。",
+      "平和的快乐是最好的。",
+      "妈妈看到你今天放学回来心情不错，愿意和妈妈分享吗？",
+      "如果你要写作业，就告诉妈妈，妈妈就不打扰你了。",
+      "检查孩子作业的时候，要抓住细小的好的地方加以表扬，而忽略孩于做得不好的地方。",
+      "你今天这部分作业写的非常认真、工整，这么棒！你怎么做到的呀？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 7,
+    "type": "response_card",
+    "title": "孩子测试成绩不够好，家长怎么询问",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "是测试考试成续出来了吗？你的心情好吗？",
+    "scripts": [
+      "是测试考试成续出来了吗？你的心情好吗？",
+      "哦，你不开心，是觉得自己这次没有发挥好吗？",
+      "哇，考了这么多分了！看起来你掌握了不少知识啦！",
+      "60 分说明你已掌握考试内容的 60%。学习的东西越多，你能掌握的东西也就越来越多。",
+      "这次没记住，下次考试就知道哪些问题可以再记一次，没有谁可以一次把世界上的知识 全部都记住"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 8,
+    "type": "response_card",
+    "title": "孩子遇到问题就说“我不会”",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "你不会，没有关系，妈妈爸爸都可以教你，你觉得怎样教你，你就可以会了呢？",
+    "scripts": [
+      "你不会，没有关系，妈妈爸爸都可以教你，你觉得怎样教你，你就可以会了呢？",
+      "妈妈知道你是可以会的，其实你是想让妈妈多和你在一起对不对？",
+      "你再好好想想。看看想了以后是不是就会了呢？如果孩子说会，家长要及时反馈，你真 棒你只要一动脑子就会了。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 9,
+    "type": "response_card",
+    "title": "孩子遇到问题不开心，不想听妈妈的建议",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "看来你有自己处理的方法，可以说出来听听吗？",
+    "scripts": [
+      "看来你有自己处理的方法，可以说出来听听吗？",
+      "我们很希望你能开心，顺利度过这个不舒服的时候。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 10,
+    "type": "response_card",
+    "title": "孩子在学校犯了错",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "学校",
+      "老师",
+      "欺负"
+    ],
+    "summary": "老师告诉我你最近很有进步，说你上课可以……是这样吗？",
+    "scripts": [
+      "老师告诉我你最近很有进步，说你上课可以……是这样吗？",
+      "你可以给我讲讲上课的感受吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 11,
+    "type": "response_card",
+    "title": "孩子喜欢向老师“告状”",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "学校",
+      "老师",
+      "欺负"
+    ],
+    "summary": "你可以给妈妈爸爸讲讲事情的经过吗？",
+    "scripts": [
+      "你可以给妈妈爸爸讲讲事情的经过吗？",
+      "哦，你告诉了老师，老师是什么态度呢？",
+      "有些事情我们的看法和人家的看法不一样，不要急着去告状，我们可以学着和同学先沟 通，从对方的角度了解一下他的想法和事情经过，再决定要不要求助老师。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 12,
+    "type": "response_card",
+    "title": "如何询问孩子在学校是否受到欺负",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "学校",
+      "老师",
+      "欺负"
+    ],
+    "summary": "宝贝，你好像不太开心，妈妈很想帮你，可以告诉妈妈发生了什么吗？",
+    "scripts": [
+      "宝贝，你好像不太开心，妈妈很想帮你，可以告诉妈妈发生了什么吗？",
+      "是发生什么事情了吗？告诉妈妈爸爸发生了什么？爸爸妈妈是要帮你的。",
+      "看到你的样子，妈妈(爸爸)看着好心疼，你现在想怎么样可以缓一下呢？需要爸爸妈妈 为你做些什么呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 13,
+    "type": "response_card",
+    "title": "孩子放学后，家长怎么询问一天的学习状况",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "回来啦(来，拥抱一下！) 今天在学校讨得怎么样？能给我讲讲吗？",
+    "scripts": [
+      "回来啦(来，拥抱一下！) 今天在学校讨得怎么样？能给我讲讲吗？",
+      "回来啦！妈妈上班忙了一天，又见到你好开心，来拥抱一下！",
+      "你今天有什么有趣的事情给我们讲讲吗？",
+      "我今天遇到一些有趣的事情你愿意听听吗？",
+      "上了一天学的感觉怎么样？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 14,
+    "type": "response_card",
+    "title": "发现孩子考试作弊",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "一时的考试没有那么重要，每个人都有自己的长处，只要你尽力了，每一次都会有新的 进步。",
+    "scripts": [
+      "一时的考试没有那么重要，每个人都有自己的长处，只要你尽力了，每一次都会有新的 进步。",
+      "我知道你很希望考个好的成绩，你一定有你的理由。我更希望你可以真实地面对自己， 这样你的心情可以放松，而不是担心什么 我希望你可以喜欢学习，考试只是检查你学的东西记住了多少，理解了多少。没关系、 放松心情，认真对待就可以了 如果需要爸爸妈妈陪伴你复习，你可以告诉我们。如果你需要其他的帮助也可以提前和 爸爸妈妈说。我们愿意和你一起进步。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 15,
+    "type": "response_card",
+    "title": "孩子在学校被欺负，要怎么教他有效保护自己",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "学校",
+      "老师",
+      "欺负"
+    ],
+    "summary": "爸爸妈妈看你最近情绪不太好，因为我们很在意你。所以想和你谈谈，你看可以吧？",
+    "scripts": [
+      "爸爸妈妈看你最近情绪不太好，因为我们很在意你。所以想和你谈谈，你看可以吧？",
+      "妈妈爸爸看到你最近睡不好觉，成绩下降，因为妈妈(爸爸)很心疼你，很想帮助你、你 愿意和妈妈(爸爸)谈谈吗？",
+      "有人欺负你，爸爸妈妈知道你很不舒服，有爸爸妈妈在，放心吧。我们看看怎么消除这 个不好事情对你造成的影响。",
+      "遇到有人欺负你：要勇敢说不！要及时告诉老师、也要尽早告诉爸爸妈妈，我们会保护 你的！"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "urgent"
+  },
+  {
+    "id": 16,
+    "type": "response_card",
+    "title": "怎么预防孩子被校园暴力",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "学校",
+      "老师",
+      "欺负"
+    ],
+    "summary": "你今天在学校有什么特别的事情发生吗？",
+    "scripts": [
+      "你今天在学校有什么特别的事情发生吗？",
+      "听说有同学被欺负了，你知道是怎么回事吗？你是怎么成功躲开的呢？",
+      "如果遇到有人打算欺负你，尽量往人多的地方去啊，然后及时告诉老师或者爸爸妈妈！",
+      "那个脾气暴躁的同学一定是缺少人关爱他，你可以告诉老师他的情况，让老师和同学多 给他一些温暖。",
+      "不要欺负同学，也不要害怕强势的同学。要学会算重他人，不卑不亢！"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "urgent"
+  },
+  {
+    "id": 17,
+    "type": "response_card",
+    "title": "孩子胆小内向",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "没事的，有妈妈备备在，谁都不敢来欺负你的，你是安全的。",
+    "scripts": [
+      "没事的，有妈妈备备在，谁都不敢来欺负你的，你是安全的。",
+      "没关系的！不会、不敢、做不好，是很正常的，爸爸妈妈像你这么大的时候也会这样， 多做几次就好了。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 18,
+    "type": "response_card",
+    "title": "孩子在外和小朋友发生冲突",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "疼吗？你打算怎么办？有没有更好的处理方式呢？要不要听下我的想法？",
+    "scripts": [
+      "疼吗？你打算怎么办？有没有更好的处理方式呢？要不要听下我的想法？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 19,
+    "type": "response_card",
+    "title": "孩子和小朋友在一起总是落单",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "今天你们在外面玩儿得怎么样啊？",
+    "scripts": [
+      "今天你们在外面玩儿得怎么样啊？",
+      "有没有谁值得你和他一起玩儿呢？或者有没有谁是你愿意和他一起玩儿的呢？",
+      "你可以试试看和哪个小朋友在一起玩儿得比较舒服"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 20,
+    "type": "response_card",
+    "title": "孩子跟朋友一起谈论别的小朋友不好的事",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "我刚才听到你们在谈论的 X（孩子同学的名字）同学的事，发生了什么？让你们这样谈 论他呢？",
+    "scripts": [
+      "我刚才听到你们在谈论的 X（孩子同学的名字）同学的事，发生了什么？让你们这样谈 论他呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 21,
+    "type": "response_card",
+    "title": "孩子觉得交不到真心朋友",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "你可以试着多和小朋友交流交流，看看能不能有合得来的地方，然后和妈妈分享一下。",
+    "scripts": [
+      "你可以试着多和小朋友交流交流，看看能不能有合得来的地方，然后和妈妈分享一下。",
+      "每个人都有自己的特点，妈妈很欣赏你的……，你也可以找找看你喜欢的小朋友的独特 之处。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 22,
+    "type": "response_card",
+    "title": "孩子交友被拒绝",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "他不和你玩，你是不是很不开心呢，你能和妈妈说说你是怎么和他说的吗？",
+    "scripts": [
+      "他不和你玩，你是不是很不开心呢，你能和妈妈说说你是怎么和他说的吗？",
+      "他不和你玩一定有他的理由，你可以问问他为什么不让你和他一起玩儿啊。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 23,
+    "type": "response_card",
+    "title": "孩子不肯分享玩具",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "他根要你的玩具，你不想给他，假如你想要他的玩且，希望他给你吗？",
+    "scripts": [
+      "他根要你的玩具，你不想给他，假如你想要他的玩且，希望他给你吗？",
+      "你也不喜欢别人不给你玩儿是吧？那我们就学会分享，大家可以相互交流，是不是很开 心啊？",
+      "哦，他有一次也不给你玩儿他的玩具，是不是他那时候有自己的理由呢？不管怎样咱们 可以大度地原谅他吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 24,
+    "type": "response_card",
+    "title": "孩子比较霸道，不肯与别人合作",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "妈妈爸爸希望你能和小朋友友好相处，可以尊重别的小朋友的意见。",
+    "scripts": [
+      "妈妈爸爸希望你能和小朋友友好相处，可以尊重别的小朋友的意见。",
+      "你是希望小朋发们都听你的吗？为什么这样希望呢？能讲讲吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 25,
+    "type": "response_card",
+    "title": "小朋友对异性同学说“我爱你”",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "看来你很喜欢和他她一起玩儿啊。",
+    "scripts": [
+      "看来你很喜欢和他她一起玩儿啊。",
+      "你可以试试其他的提议，比如做好朋友，一起玩儿，你觉得怎么样？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 26,
+    "type": "response_card",
+    "title": "孩子“早恋”",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "面对孩子早恋的非暴力沟通四步法 ①我看到/听说你和 XX 的(孩子朋友的名字)关系很好。",
+    "scripts": [
+      "面对孩子早恋的非暴力沟通四步法 ①我看到/听说你和 XX 的(孩子朋友的名字)关系很好。",
+      "②我很好奇你们是什么样的朋友。",
+      "③我希望你和好朋友可以互相促进学习和共同进步。",
+      "④你们是否可以做到呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 27,
+    "type": "response_card",
+    "title": "孩子不尊重家里的老人",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "究意发生了什么？",
+    "scripts": [
+      "究意发生了什么？",
+      "或许你有道理，但有理更要好好说啊。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 28,
+    "type": "response_card",
+    "title": "除了宝贝我爱你，还有什么话可以向孩子表达爱",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "我看到你写作业的时候很专注，我很佩服你的专注。",
+    "scripts": [
+      "我看到你写作业的时候很专注，我很佩服你的专注。",
+      "今天你自己做了…妈妈觉得你自己长本事了，好棒！",
+      "这个不是那么容易的，你是怎么做到的？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 29,
+    "type": "response_card",
+    "title": "孩子喜欢攀比，嫌弃家里穷",
+    "category": "安全危机场景",
+    "tags": [
+      "安全危机场景",
+      "安全",
+      "危机",
+      "保护"
+    ],
+    "summary": "咱们家是不富裕，但是爸爸妈妈是很努力奋斗的，你放心，爸爸妈妈会尽力让你和同学 们平等的(拍拍孩子的小肩膀) 你能告诉...",
+    "scripts": [
+      "咱们家是不富裕，但是爸爸妈妈是很努力奋斗的，你放心，爸爸妈妈会尽力让你和同学 们平等的(拍拍孩子的小肩膀) 你能告诉爸爸妈妈是哪些地方让你觉得不是那么满意吗？（摸摸孩子的头) 虽然咱们家不富裕，爸爸妈妈没能给你更多的玩具什么的，但爸爸妈妈可以给你更多的 爱呀(说完亲下孩子)"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 30,
+    "type": "response_card",
+    "title": "经常加班出差怎么跟孩子增加亲密度",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "出差回家：“我回来了，宝贝儿。爸爸妈妈好想你啊！来给我一个拥抱。” 出差之前：爸爸(妈妈)要出差到 XX 某地，你知...",
+    "scripts": [
+      "出差回家：“我回来了，宝贝儿。爸爸妈妈好想你啊！来给我一个拥抱。” 出差之前：爸爸(妈妈)要出差到 XX 某地，你知道那个地方吗？来，咱们在网上查查那 里是什么样子的？都有什么？然后告诉爸爸妈妈，你希望给你带什么纪念品回来。（给 孩子带些有纪念意义的礼物，让孩子在父母的出差中获得更多的知识和亲人之间的牵 挂) 爸爸(妈妈)又要出差了，每次在外面都更想你，你要是也想我了晚上咱们可以视频通话， 我给你讲讲我这边有趣的事。你也可以分享你的事情，好吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 31,
+    "type": "response_card",
+    "title": "“我不要你了”这句话为什么不能说",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "给我全世界都不换我的儿子/女儿/宝贝。",
+    "scripts": [
+      "给我全世界都不换我的儿子/女儿/宝贝。",
+      "你是妈妈最爱的儿子/女儿/宝贝。",
+      "无论你长大了走到哪里，妈妈都会在你需要的时候陪在你身边。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 32,
+    "type": "response_card",
+    "title": "孩子不想上学，将来怎么独立",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "你现在还是小孩子，等你把学校里面的知识学到了，能够掌握的本领掌握了，那你长大 了想做什么工作，就都有可能了。",
+    "scripts": [
+      "你现在还是小孩子，等你把学校里面的知识学到了，能够掌握的本领掌握了，那你长大 了想做什么工作，就都有可能了。",
+      "没有关系，上学的事情需要适应，咱们有好多年可以慢慢适应呢，爸爸妈妈陪着你慢慢 长大。如果你想了解大人的世界，咱们可以找时间带你去看看爸爸妈妈的办公室。等你 长大了，把要学的东西都学会了你也就有自己的世界了。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 33,
+    "type": "response_card",
+    "title": "小孩儿不肯分床睡",
+    "category": "安全危机场景",
+    "tags": [
+      "安全危机场景",
+      "安全",
+      "危机",
+      "保护"
+    ],
+    "summary": "等你长大了就可以睡在自己的床上了，想想你的床是什么样的呀？床上都有什么？你的 床单枕头被子是什么颜色的呀？",
+    "scripts": [
+      "等你长大了就可以睡在自己的床上了，想想你的床是什么样的呀？床上都有什么？你的 床单枕头被子是什么颜色的呀？",
+      "如里你有自己的房间，你希望是什么样子的啊？你可以画给妈妈看看 妈妈可以答应你，晚上在你的小床上陪你睡着了再走，怎么陪都行，比如讲故事，比如 做手指游戏。",
+      "你知道怎么睡觉特别美好吗？就是自己躺在属于自己特别漂亮的床上，然后闭上眼睛想 着最开心的事情，想着想着就睡着了，可能还会做梦了呢。那是特别美好的。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 34,
+    "type": "response_card",
+    "title": "孩子希望父母陪着一起玩，但父母作太忙！",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "妈妈知道你现在很希望妈妈陪你玩一会儿，但是妈妈手头有事情没完成，你先自己玩一 会(或者让家里其他人陪一会儿，比如姥姥...",
+    "scripts": [
+      "妈妈知道你现在很希望妈妈陪你玩一会儿，但是妈妈手头有事情没完成，你先自己玩一 会(或者让家里其他人陪一会儿，比如姥姥)，妈妈保证一个小时(或多长时间，这时候可 以指一下钟表)之后就来陪你 妈妈在忙的时候，你可以想象一下妈妈是怎么忙的，然后可以写下来给妈妈看。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 35,
+    "type": "response_card",
+    "title": "家长如何有效地给孩子立规矩",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "在外面和妈妈说话要小声，可以在妈妈耳边小声说，妈妈能听见的。",
+    "scripts": [
+      "在外面和妈妈说话要小声，可以在妈妈耳边小声说，妈妈能听见的。",
+      "和别人说话要看着对方的眼睛，声音要清楚。",
+      "不可以和别人要东西。想要的话可以和妈妈好好说。",
+      "嗯，你这么干净，是一个很美好的孩子啊！好我喜欢！"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 36,
+    "type": "response_card",
+    "title": "立好规矩之后，孩子不好好遵守",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "我发现，咱们定好的规矩，最近似乎没有在你身上见到哦，是不是对那个规矩有什么想 法呢？",
+    "scripts": [
+      "我发现，咱们定好的规矩，最近似乎没有在你身上见到哦，是不是对那个规矩有什么想 法呢？",
+      "我发现你今天(某某事情)做的很好，你是怎么做到的？可以继续吗？",
+      "昨天你和妈妈的约定你今天打算什么时间去做呢？哦，这么棒！你已经打算去做了，来 拉个勾勾！妈妈相信你！",
+      "我相信你是有自己的打算去坚持做下去的，如果你想和妈妈分享做好的感受，妈妈很愿 意听的。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 37,
+    "type": "response_card",
+    "title": "当孩子说“我想再玩一会儿”",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "那你觉得再玩几分钟可以呢？说话要算数哦。这样下次妈妈就可以放心任你做决定了。",
+    "scripts": [
+      "那你觉得再玩几分钟可以呢？说话要算数哦。这样下次妈妈就可以放心任你做决定了。",
+      "这样的安排你觉得好吗"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 38,
+    "type": "response_card",
+    "title": "老人过度溺爱孩子，父母如何劝阻",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "对老人 爸妈我知道你们疼爱孙子，但我们更希望您们对孩子要求严格一些。不是有“娇儿不孝” 的话吗我们希望孩子懂得孝敬您...",
+    "scripts": [
+      "对老人 爸妈我知道你们疼爱孙子，但我们更希望您们对孩子要求严格一些。不是有“娇儿不孝” 的话吗我们希望孩子懂得孝敬您二老！",
+      "谢谢爸妈！今天你们辛苦了！我下班了孩子交给我，你们休息放松一下吧。",
+      "爸妈您们照顺孩子很辛苦，正好孩子睡了，您们看咱们是否用一点时间讨论下怎么统一 对孩子的教育，可以吗？",
+      "爸妈，我们知道您们疼爱孙子孙女，但我们完全支持您对孩子严格和严厉一些，这样他 们走上社会才会懂得规矩，不受惩罚，您们不是把我们教育得很好的嘛！",
+      "对孩子 我看到爷爷奶奶对你做什么都允许，能告诉爸爸妈妈，你的感受是什么？(了解孩子的 感受和想法很重要) 你看爸爸妈妈是不是很棒？那是因为我们小时候，爷爷奶奶对我们的要求很严格，我们 也很听话爸爸妈妈才会这么棒的！"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 39,
+    "type": "response_card",
+    "title": "孩子喜欢宅家，怎么让孩子走出家门",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "孩子不喜欢出门，宅在家里，家长可以让孩子帮忙做一些外出的事情。如帮妈妈下楼买 东西 帮妈妈把垃圾扔一下吧，或你陪我出...",
+    "scripts": [
+      "孩子不喜欢出门，宅在家里，家长可以让孩子帮忙做一些外出的事情。如帮妈妈下楼买 东西 帮妈妈把垃圾扔一下吧，或你陪我出去一趟。想办法让孩子动起来。孩子回来后可以问 “你这一路有什么有趣的事情吗？” 或者你出去有没有看到........."
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 40,
+    "type": "response_card",
+    "title": "让孩子爱上运动",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "运动可以让我们长得更高，更漂亮，更健康。如果你要是挑一样运动，你会选什么？",
+    "scripts": [
+      "运动可以让我们长得更高，更漂亮，更健康。如果你要是挑一样运动，你会选什么？",
+      "你知道吗爸爸像你这么大的时候，一开始就是也打不好，投篮不进，后来我的爸爸就陪 我练，现在我还不错，要是你陪我练练，很快你就能打过我(依据进行的运动变换语境)"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 41,
+    "type": "response_card",
+    "title": "孩子做什么都问家长的意见，依赖性强",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "宝贝，这件事情，妈妈觉得你一定有自己的意见，如果把做决定的权力交给你，你看看 你会怎么做呢？",
+    "scripts": [
+      "宝贝，这件事情，妈妈觉得你一定有自己的意见，如果把做决定的权力交给你，你看看 你会怎么做呢？",
+      "你的想法很好啊，爸爸妈妈都没有想到，你是怎么想的呢？",
+      "嗯，你的想法很有创意，只是我还有一点不明白，你能给我具体讲讲吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 42,
+    "type": "response_card",
+    "title": "对孩子怎么夸奖才合理",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "这道题你做的很巧妙，你肯开动脑筋，从多个角度思考，真好！真聪明！",
+    "scripts": [
+      "这道题你做的很巧妙，你肯开动脑筋，从多个角度思考，真好！真聪明！",
+      "你可以帮助小朋友，很有爱心，这个很棒！(夸赞具体的做法)"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 43,
+    "type": "response_card",
+    "title": "孩子说脏话",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "你这句话说的是什么啊？",
+    "scripts": [
+      "你这句话说的是什么啊？",
+      "你知道吗，这不是好话，这个话是很不好的，以后不要说给别人听啊。",
+      "我知道你想表达你的情绪，咱们想想什么词更好？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 44,
+    "type": "response_card",
+    "title": "发现孩子撒谎",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "我了解这件事你没有实话实说(注意是实话实说好，而不是撒谎)我想你一定有你的困难 (或.你一定有你的理由，但是爸爸妈妈...",
+    "scripts": [
+      "我了解这件事你没有实话实说(注意是实话实说好，而不是撒谎)我想你一定有你的困难 (或.你一定有你的理由，但是爸爸妈妈很想帮助你，所以想听到真实的情况是怎样的， 毕竟我们大人经历的更多，有些事情看起来其实没有那么不容易(是不容易，不是难)面 对的，你觉得可以吗？",
+      "看来，你还想等一等再讲，没有关系，只要你需要，爸爸妈妈随时在这里帮助你。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 45,
+    "type": "response_card",
+    "title": "孩子说话总用攻击性的语言。比如“你去死吧”",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "妈妈觉得你心里面有很多话想说，妈妈希望你说出你的愿望，而不是不好听的话。",
+    "scripts": [
+      "妈妈觉得你心里面有很多话想说，妈妈希望你说出你的愿望，而不是不好听的话。",
+      "妈妈很愿意听你把心里面希望爸爸妈妈做到的事情告诉我们，你是我们最爱的宝贝，我 们希望能让你感受到我们爱你。",
+      "你看，你说那么不好听的话，你一定有好多的委屈和难过，你能和爸爸妈妈好好谈谈吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 46,
+    "type": "response_card",
+    "title": "孩子爱吹牛，说话夸张",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "你讲的内容好有趣！",
+    "scripts": [
+      "你讲的内容好有趣！",
+      "你可以讲得更且体一些吗？",
+      "嗯，你讲的听起来很酷炫(或其他词)但是，妈妈希望你可以描述得更具体一些，这样妈 妈会容易理解。",
+      "我知道你这么说是希望妈妈开心，但其实你怎么讲妈妈都喜欢。",
+      "妈妈很喜欢听你讲话，你的声音妈妈喜欢听。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 47,
+    "type": "response_card",
+    "title": "公共场所孩子大声说话，打闹",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "你看，这样的公共场合大家都很安静，这是一种修养，咱们家的小公主(小绅士)就是有 修养的，对不对呀？",
+    "scripts": [
+      "你看，这样的公共场合大家都很安静，这是一种修养，咱们家的小公主(小绅士)就是有 修养的，对不对呀？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 48,
+    "type": "response_card",
+    "title": "孩子偷拿别人的东西",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "你是不是很喜欢这个东西呢？可是你知道这个不是咱们家的，就像你不是别人家的小 孩，别人把你领走，爸爸妈妈会伤心的。",
+    "scripts": [
+      "你是不是很喜欢这个东西呢？可是你知道这个不是咱们家的，就像你不是别人家的小 孩，别人把你领走，爸爸妈妈会伤心的。",
+      "你想要什么可以告诉爸爸妈妈，但不可以自己拿别人的东西！东西不是咱们家的，不可 以拿！"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 49,
+    "type": "response_card",
+    "title": "孩子开玩笑过火",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "妈妈知道你开玩笑的，是吧？但是你的朋友可能不习惯这样的玩笑，你看看怎么安慰一 下他。",
+    "scripts": [
+      "妈妈知道你开玩笑的，是吧？但是你的朋友可能不习惯这样的玩笑，你看看怎么安慰一 下他。",
+      "你刚才看到别人对你的玩笑生气了。你可以告诉妈妈你心里面的感受吗？你本来希望和 别人建立友好的关系，那咱们看看以后怎么样说了更好，好吗？",
+      "假如你不是开玩笑地说，如果是你正经的表达，妈妈想知道你想怎么说。妈妈很希望听 到你真实的意思，你放心，妈妈会好好听你说的。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 50,
+    "type": "response_card",
+    "title": "怎么教导孩子不要随便接受别人的礼物",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "如果以后再有别人送你礼物的时候，你可以先问问爸爸妈妈，如果爸爸妈妈不在，就告 诉人家说一定要爸爸妈妈同意才可以，因为...",
+    "scripts": [
+      "如果以后再有别人送你礼物的时候，你可以先问问爸爸妈妈，如果爸爸妈妈不在，就告 诉人家说一定要爸爸妈妈同意才可以，因为我们要礼尚往来，收了礼物就要回赠礼物。",
+      "小孩没有办法自己买礼物回赠，所以，一定要让爸爸妈妈同意了才可以收，知道吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 51,
+    "type": "response_card",
+    "title": "怎么教育孩子学会感恩",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "刚才你不说谢谢，是不是你有什么想法？",
+    "scripts": [
+      "刚才你不说谢谢，是不是你有什么想法？",
+      "妈妈(爸爸)希望你将来可以做到自己表达感谢，因为表达感谢是我们长大后应该有的修 养。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 52,
+    "type": "response_card",
+    "title": "被孩子嫌弃丑，家长怎么办",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "妈妈接受你的意见，妈妈也想变得漂亮一些，你有什么建议吗？",
+    "scripts": [
+      "妈妈接受你的意见，妈妈也想变得漂亮一些，你有什么建议吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 53,
+    "type": "response_card",
+    "title": "当孩子说“你凭什么管我”",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "青春期你会面临很多身体和心理的变化，爸爸妈妈很希望把我们少年时期的经验和你分 享，你愿意吗？",
+    "scripts": [
+      "青春期你会面临很多身体和心理的变化，爸爸妈妈很希望把我们少年时期的经验和你分 享，你愿意吗？",
+      "你希望爸爸妈妈怎么对待你呢，我们希望能让你感受到爸爸妈妈对你的爱和关心。",
+      "你一定有你自己的想法和希望，那你想告诉爸爸妈妈吗？我们很想尊重你，但我们需要 知道你想要什么？",
+      "我们相信你能行，不论你需不需要，爸爸妈妈永远在这里，随时听你的召唤。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 54,
+    "type": "response_card",
+    "title": "孩子特别介意被人评价自己的外形",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "妈妈发现你很在意别人说你怎么样，你能告诉妈妈你在意他们说的那些话吗？你的感受 是什么呢 每个人都会被别人说，咱们也有...",
+    "scripts": [
+      "妈妈发现你很在意别人说你怎么样，你能告诉妈妈你在意他们说的那些话吗？你的感受 是什么呢 每个人都会被别人说，咱们也有说别人的时候。这个很正堂没关系的。",
+      "你看别人有自己对人的看法，你也有是不是，所以，每个人的看法都是从自己的角度出 发的，你可以参考，但要有自己的见解。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 55,
+    "type": "response_card",
+    "title": "发现孩子翻父母的钱包",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "咦，你在翻钱包？是想要钱不敢和爸妈讲吗？你这么不信任爸爸妈妈，我们好难过哦！",
+    "scripts": [
+      "咦，你在翻钱包？是想要钱不敢和爸妈讲吗？你这么不信任爸爸妈妈，我们好难过哦！",
+      "假如你拿钱我们不知道，可能我们会怀疑被其他什么人拿了，这样容易冤枉别人。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 56,
+    "type": "response_card",
+    "title": "如何应对孩子的“为什么别人可以我不行”",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "你可以行，只是你要考虑你做了以后产生的后果，你看一看自己能接受多少？",
+    "scripts": [
+      "你可以行，只是你要考虑你做了以后产生的后果，你看一看自己能接受多少？",
+      "你如果很愿意尝试，那么咱们分析一下会发生什么，以及如何应对好吗？",
+      "如果你想好了，你可以试着自己去做，爸爸妈妈可以帮助你渡过难关。",
+      "如果你觉得这样做是好的，妈妈愿意支持你。只是你需要给我们讲一讲，你看怎么样？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 57,
+    "type": "response_card",
+    "title": "孩子知错不改",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "我看到你·····(观察到的场景) 我很….(感受) 我很希望……(需求) 你可以满足我们这个要求吗?",
+    "scripts": [
+      "我看到你·····(观察到的场景) 我很….(感受) 我很希望……(需求) 你可以满足我们这个要求吗?"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 58,
+    "type": "response_card",
+    "title": "孩子输掉了很看重的比赛，心情沮丧",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "当家长心里在意时可以说，真的是好可惜啊！好遗憾啊！咱们都准备了那么长时间，下 了那么多功夫，太可惜了！不开心是不是？",
+    "scripts": [
+      "当家长心里在意时可以说，真的是好可惜啊！好遗憾啊！咱们都准备了那么长时间，下 了那么多功夫，太可惜了！不开心是不是？",
+      "当家长心里不在意时可以说，“嗨，我都没特别在意这个比赛。但是我知道，你很希望 能赢，所以你很不开心，这个我很理解，你希望我们怎么安慰你呢？”"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 59,
+    "type": "response_card",
+    "title": "孩子表现欲太强，喜欢直接指出别人的错误",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "我看到（听说）你今天指出某某。(孩子同学的名字)的错误的，你很坦率，坦率是好的 品质，那么你知道他的感受是怎样的吗？...",
+    "scripts": [
+      "我看到（听说）你今天指出某某。(孩子同学的名字)的错误的，你很坦率，坦率是好的 品质，那么你知道他的感受是怎样的吗？他愿意接受吗？",
+      "我看到你能经常找到别人的错误，看起来你对自己和别人的要求都比较高，这一点很好， 说明你很上进。",
+      "那么，你是否问过别的同学是否也知道这些要求呢？同学可能有他自己的观点，你们有 没有去交流呢?"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 60,
+    "type": "response_card",
+    "title": "孩子做错事，总爱找借口推脱责任",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "我看到你做了那样一个事情，能告诉我发生了什么吗？是什么让你觉得要这样做呢？",
+    "scripts": [
+      "我看到你做了那样一个事情，能告诉我发生了什么吗？是什么让你觉得要这样做呢？",
+      "这件事你这么做，可以告诉妈妈你是怎么想的吗？我也有不同的观点，我想告诉你。",
+      "你这么做我认为是错误的，原因是........你自己有么看呢？",
+      "我很愿意尊重你的道理，但是，我认为你的道理我不太能够接受，原因是……"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 61,
+    "type": "response_card",
+    "title": "孩子寄宿在别人家感到自卑",
+    "category": "安全危机场景",
+    "tags": [
+      "安全危机场景",
+      "安全",
+      "危机",
+      "保护"
+    ],
+    "summary": "爸爸妈妈因为一些原因(要很具体) 你需要在某某(孩于父母信任的人的名字)的家里暂时件上几个月(或年)你可以每天跟妈 ...",
+    "scripts": [
+      "爸爸妈妈因为一些原因(要很具体) 你需要在某某(孩于父母信任的人的名字)的家里暂时件上几个月(或年)你可以每天跟妈 妈备爸视频通话或打电话，也可以和妈妈通信，咱们一起度过这个时间，到时候，妈妈 爸爸可以回来和你一起住了。",
+      "在这个家里，你要听大人的话。和哥哥姐姐以及弟弟妹妹搞好关系，有什么开心的事情 可以和这个家里的人分享，也可以和爸妈分享，如果有什么不开心的事情，也可以悄悄 和爸爸妈妈讲的。爸爸妈妈虽然不在你身边，但我们会很关心你的每一天的。",
+      "爸爸妈妈只是暂时不在你身边，但是爸爸妈妈心里面是每天都关注着你的，你在这个家 里面开开心心的，学习着适应在这里的生活，等爸爸妈妈回来讲给我们听你在这个家里 的故事。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 62,
+    "type": "response_card",
+    "title": "家长觉得自己做错了，怎么向孩子道歉",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "对不起妈妈做得不对 妈妈向你道歉 你希望妈妈怎么做才是对的？妈妈愿意尊重你的想法。",
+    "scripts": [
+      "对不起妈妈做得不对 妈妈向你道歉 你希望妈妈怎么做才是对的？妈妈愿意尊重你的想法。",
+      "妈妈也有做得不对的地方，因为妈妈也还在学习和成长。",
+      "妈妈希望你可以提出你的看法，因为妈妈需要了解你的想法。",
+      "是不是咱们可以在这件事情上总结出一些值得重视的观点呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 63,
+    "type": "response_card",
+    "title": "孩子跑丢找回之后，家长如何教育",
+    "category": "安全危机场景",
+    "tags": [
+      "安全危机场景",
+      "安全",
+      "危机",
+      "保护"
+    ],
+    "summary": "谢天谢地，终于见到你了，妈妈都担心死了，你还好吧？",
+    "scripts": [
+      "谢天谢地，终于见到你了，妈妈都担心死了，你还好吧？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "urgent"
+  },
+  {
+    "id": 64,
+    "type": "response_card",
+    "title": "孩子一逛街就要买玩具",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "规则",
+      "边界",
+      "习惯"
+    ],
+    "summary": "假如不是买这个玩具，而是要爸爸妈妈给你其他的东西来代替，你想要什么呢？",
+    "scripts": [
+      "假如不是买这个玩具，而是要爸爸妈妈给你其他的东西来代替，你想要什么呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 65,
+    "type": "response_card",
+    "title": "孩子要离家出走",
+    "category": "安全危机场景",
+    "tags": [
+      "安全危机场景",
+      "安全",
+      "危机",
+      "保护"
+    ],
+    "summary": "爸爸妈妈不希望你说离家出走这样的话，这个话让我们很伤心，因为我们很爱你，希望 给你一个你喜欢的家。",
+    "scripts": [
+      "爸爸妈妈不希望你说离家出走这样的话，这个话让我们很伤心，因为我们很爱你，希望 给你一个你喜欢的家。",
+      "如果是留在你喜欢的家里，你希望这个家是什么样子的呢？你希望爸爸妈妈怎么做？",
+      "你愿意和爸爸妈妈一起营造一个你喜欢的家吗？咱们一起努力好不好？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "urgent"
+  },
+  {
+    "id": 66,
+    "type": "response_card",
+    "title": "孩子在聚会上被大人数落，父母要维护孩子吗？",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "学校",
+      "老师",
+      "欺负"
+    ],
+    "summary": "对大人说 抱歉我的孩子给您带来了困扰，我向您道歉！能让我和孩子单独聊聊吗？谢谢了！",
+    "scripts": [
+      "对大人说 抱歉我的孩子给您带来了困扰，我向您道歉！能让我和孩子单独聊聊吗？谢谢了！",
+      "单独对孩子说 “能告诉我刚才发生了什么吗？\" “这个事情发生了，妈妈不责怪你，只是妈妈想知道怎么发生的，咱们以后学会尽量避 免。” 如里觉得孩子能接受，家长可以摸摸孩子的头，蹲下来对孩子说，“妈妈知道你很不好 受，没关系，有妈妈在。来，先和阿姨说声对不起。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 67,
+    "type": "response_card",
+    "title": "孩子想自杀，父母应该怎么劝",
+    "category": "安全危机场景",
+    "tags": [
+      "安全危机场景",
+      "安全",
+      "危机",
+      "保护"
+    ],
+    "summary": "爸爸妈妈非常爱你，看到你不开心，我们很难过。听到你这么说，我们更难过。能告诉 我们你希望我们怎么做吗？",
+    "scripts": [
+      "爸爸妈妈非常爱你，看到你不开心，我们很难过。听到你这么说，我们更难过。能告诉 我们你希望我们怎么做吗？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "urgent"
+  },
+  {
+    "id": 68,
+    "type": "response_card",
+    "title": "孩子交到“坏”朋友，逃学打游戏",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "同学"
+    ],
+    "summary": "妈妈非常不愿意看到你不去上学还去打游戏，但我想了解事情是怎么发生的，是什么让 你做了那样的决定呢？",
+    "scripts": [
+      "妈妈非常不愿意看到你不去上学还去打游戏，但我想了解事情是怎么发生的，是什么让 你做了那样的决定呢？",
+      "妈妈看到你和某某(孩子朋友名)，在一起的时候不学习，妈妈希望你有好朋友，但是妈 妈更希望你和好朋友在一起互相督促上进。",
+      "我看你最近和 XX(孩子朋友名)很要好，朋友需要能帮助彼此更好，那 XX(孩子朋友名) 的哪些方面让你看重呢？",
+      "我想，你们一定不愿意落在其他人后面的。所以，你可以帮帮他让他和你一起学习吗？",
+      "你们一起进步，怎么样？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 69,
+    "type": "response_card",
+    "title": "发现孩子被异性摸了隐私部位",
+    "category": "安全危机场景",
+    "tags": [
+      "安全危机场景",
+      "安全",
+      "危机",
+      "保护"
+    ],
+    "summary": "平时可以在适当时候提醒孩子，我们每一个人都有隐私部位的，这个部位是属于自己的 地方，是不可以让其他人触碰的。",
+    "scripts": [
+      "平时可以在适当时候提醒孩子，我们每一个人都有隐私部位的，这个部位是属于自己的 地方，是不可以让其他人触碰的。",
+      "如果有人想摸你的隐私部位，你一定要拒绝，可以喊出来。而且要让爸爸妈妈知道。",
+      "如果发现孩子被人触摸了隐私部位，家长避免反应过度，可以温柔安慰。",
+      "宝贝，有爸爸妈妈在，不怕，你现在感觉怎么样？如果不舒服就说出来。",
+      "妈妈知道你现在心里面不开心，没关系，以后小心一些就好了。现在需要爸爸妈妈怎么 做你会觉得好受一些呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "urgent"
+  },
+  {
+    "id": 70,
+    "type": "response_card",
+    "title": "家长如何应对孩子逃学",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学习",
+      "作业",
+      "上学"
+    ],
+    "summary": "今天，你没有正堂地上学，我根你一定有你的原因。",
+    "scripts": [
+      "今天，你没有正堂地上学，我根你一定有你的原因。",
+      "能告诉我今天为什么不想去学校吗？我们不知道原因，怎么去谅解你呢？",
+      "爸爸妈妈知道你一定有你的原因，我们很愿意倾听你的需要，帮助你的。",
+      "如果你想和爸爸妈妈讲一讲今天的经过，那就晚一些，咱们出去散步的时候聊聊吧。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 71,
+    "type": "response_card",
+    "title": "夫妻发生争执时被孩子碰见，如何解释",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "沟通",
+      "倾听",
+      "陪伴"
+    ],
+    "summary": "没事儿，我和你爸对于一些人或事的看法不一样，是不是吵到你了，抱歉啊，我们小点 声。",
+    "scripts": [
+      "没事儿，我和你爸对于一些人或事的看法不一样，是不是吵到你了，抱歉啊，我们小点 声。",
+      "妈妈很关心你的感受，爸爸和妈妈在争论的时候，你的感受是什么呢？"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 72,
+    "type": "response_card",
+    "title": "孩子喜欢化妆，过分在意外表",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "情绪",
+      "行为",
+      "表达"
+    ],
+    "summary": "大人化妆是因为皮肤不嫩了，五官都不精神了。在外面要有好的精神状态，让我们看起 来更年轻而小孩子本来就是嫩的，年轻的，...",
+    "scripts": [
+      "大人化妆是因为皮肤不嫩了，五官都不精神了。在外面要有好的精神状态，让我们看起 来更年轻而小孩子本来就是嫩的，年轻的，况且化妆会让皮肤老得快、你愿意老得快吗？",
+      "演出的时候，化妆是要让很远的人看到我们眼睛嘴巴表现的表情的，而平时小朋友化妆 会显得太夸张了。",
+      "妈妈和大家都觉得你本来就很好看，清水出芙容，天然去雕饰，你现在就是清水中最嫩 嫩的芙蓉啊？根本不需要后天的装饰。"
+    ],
+    "tip": "先稳定情绪，听孩子把话说完，再用温和的话引导下一步。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 73,
+    "type": "response_card",
+    "title": "孩子一写作业就拖拉",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "作业",
+      "拖拉",
+      "学习流程",
+      "扩展常见问题"
+    ],
+    "summary": "先把任务切小，让孩子体验开始不难。",
+    "scripts": [
+      "我看到你一到作业前就卡住，可能不是故意拖，而是觉得难、烦或不知道从哪开始。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "我们先不谈全部作业，只定10分钟和第一小题，开始以后再看下一步。",
+      "大春之道幸福驿站提醒：先把任务切小，让孩子体验开始不难。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1070
+  },
+  {
+    "id": 74,
+    "type": "response_card",
+    "title": "孩子总说自己学不会",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "学不会",
+      "信心",
+      "能力",
+      "扩展常见问题"
+    ],
+    "summary": "先保护孩子的信心，再陪他找到一个能做到的小步骤。",
+    "scripts": [
+      "你说学不会的时候，我先听见的是挫败，不是能力差。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "我们挑一个最小的知识点，先把会的一步找出来，再补不会的那一步。",
+      "大春之道幸福驿站提醒：先保护孩子的信心，再陪他找到一个能做到的小步骤。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1633
+  },
+  {
+    "id": 75,
+    "type": "response_card",
+    "title": "孩子一考试就紧张",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "考试",
+      "紧张",
+      "情绪",
+      "扩展常见问题"
+    ],
+    "summary": "先把紧张正常化，再把注意力带回准备动作。",
+    "scripts": [
+      "考试紧张说明你在意结果，这不丢人，也不代表你准备得不好。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "考前先做三次呼吸，再只看一道最熟的题，把注意力带回能做的动作。",
+      "大春之道幸福驿站提醒：先把紧张正常化，再把注意力带回准备动作。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1999
+  },
+  {
+    "id": 76,
+    "type": "response_card",
+    "title": "孩子成绩下降不愿意说",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "成绩",
+      "下降",
+      "沟通",
+      "扩展常见问题"
+    ],
+    "summary": "先问感受和困难，不急着追责。",
+    "scripts": [
+      "成绩下降先不等于退步的人，可能是状态、方法或节奏出了问题。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "我们先复盘最近两周发生了什么，只找一个最可能影响成绩的原因。",
+      "大春之道幸福驿站提醒：先问感受和困难，不急着追责。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1553
+  },
+  {
+    "id": 77,
+    "type": "response_card",
+    "title": "孩子沉迷补课仍没效果",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "补课",
+      "方法",
+      "学习",
+      "扩展常见问题"
+    ],
+    "summary": "从时间堆积转向方法、状态和内驱力。",
+    "scripts": [
+      "补课很多还没效果，说明问题可能不只是时间不够。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "我们先看听懂、练会、复盘三个环节卡在哪里，再决定要不要继续补。",
+      "大春之道幸福驿站提醒：从时间堆积转向方法、状态和内驱力。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 5244
+  },
+  {
+    "id": 78,
+    "type": "response_card",
+    "title": "孩子不愿意复盘错题",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "错题",
+      "复盘",
+      "学习",
+      "扩展常见问题"
+    ],
+    "summary": "把错题当成发现规律，不当成否定孩子。",
+    "scripts": [
+      "错题不是证明你笨，它是在告诉我们知识点哪里还没长牢。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "今天只选三道错题，写出错因和下一次怎么提醒自己。",
+      "大春之道幸福驿站提醒：把错题当成发现规律，不当成否定孩子。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 3766
+  },
+  {
+    "id": 79,
+    "type": "response_card",
+    "title": "孩子学习没有目标感",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "目标",
+      "内驱力",
+      "学习",
+      "扩展常见问题"
+    ],
+    "summary": "从孩子在意的小愿望切入，连接学习意义。",
+    "scripts": [
+      "没有目标感时，硬逼梦想通常没用，我们先从你在意的小愿望开始。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "先定一个两周目标，让你能看到自己做了以后有什么变化。",
+      "大春之道幸福驿站提醒：从孩子在意的小愿望切入，连接学习意义。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 3961
+  },
+  {
+    "id": 80,
+    "type": "response_card",
+    "title": "孩子上课容易走神",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "走神",
+      "专注",
+      "课堂",
+      "扩展常见问题"
+    ],
+    "summary": "先了解走神发生在什么时候，再一起设计提醒动作。",
+    "scripts": [
+      "走神不一定是态度差，可能是听不懂、太累或环境让你分心。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "我们记录三次走神发生在什么时候，再设计一个小提醒动作。",
+      "大春之道幸福驿站提醒：先了解走神发生在什么时候，再一起设计提醒动作。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 62
+  },
+  {
+    "id": 81,
+    "type": "response_card",
+    "title": "孩子只想要答案不愿思考",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "答案",
+      "思考",
+      "能力",
+      "扩展常见问题"
+    ],
+    "summary": "少讲答案，多问他已经看懂哪一步。",
+    "scripts": [
+      "你想要答案，可能是怕错、怕慢，也可能是不知道怎么开始想。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "我先不直接给答案，你先说你看懂了哪一步，我陪你接下一步。",
+      "大春之道幸福驿站提醒：少讲答案，多问他已经看懂哪一步。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 2603
+  },
+  {
+    "id": 82,
+    "type": "response_card",
+    "title": "孩子写作业需要家长盯着",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "监督",
+      "作业",
+      "习惯",
+      "扩展常见问题"
+    ],
+    "summary": "从盯人改成共定流程，逐步交还责任。",
+    "scripts": [
+      "如果作业必须靠我盯着，说明流程还没有真正变成你的习惯。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "我们把开始时间、检查点和求助规则写清楚，我只在约定时间出现。",
+      "大春之道幸福驿站提醒：从盯人改成共定流程，逐步交还责任。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 2602
+  },
+  {
+    "id": 83,
+    "type": "response_card",
+    "title": "孩子假期作业拖到最后",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "假期",
+      "作业",
+      "计划",
+      "扩展常见问题"
+    ],
+    "summary": "先拆天数，再每天只确认最小进度。",
+    "scripts": [
+      "假期作业拖到最后，通常不是一天的问题，是每天没有小进度。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "今天先按剩余天数拆开，只完成一个最小包，不用一次补完全部。",
+      "大春之道幸福驿站提醒：先拆天数，再每天只确认最小进度。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 685
+  },
+  {
+    "id": 84,
+    "type": "response_card",
+    "title": "孩子怕难题直接放弃",
+    "category": "学习作业",
+    "tags": [
+      "学习作业",
+      "难题",
+      "放弃",
+      "信心",
+      "扩展常见问题"
+    ],
+    "summary": "先肯定他愿意面对，再陪他找第一小步。",
+    "scripts": [
+      "遇到难题想放弃很正常，真正要练的是卡住以后怎么往前挪一步。",
+      "学习问题先不贴懒散标签，先看状态、方法、任务大小和启动成本。",
+      "学习责任最终要还给孩子，父母负责陪他搭方法，不替他完成。",
+      "先圈出题目里看懂的条件，再只问一个问题：第一步能写什么。",
+      "大春之道幸福驿站提醒：先肯定他愿意面对，再陪他找第一小步。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 447
+  },
+  {
+    "id": 85,
+    "type": "response_card",
+    "title": "孩子沉迷手机游戏",
+    "category": "手机网络",
+    "tags": [
+      "手机网络",
+      "手机",
+      "游戏",
+      "规则",
+      "扩展常见问题"
+    ],
+    "summary": "先理解手机满足了什么，再一起定可执行边界。",
+    "scripts": [
+      "游戏吸引你，可能是里面有成就、伙伴和放松，我先理解这个需要。",
+      "手机问题先看它满足了陪伴、放松、成就还是逃避，再谈规则。",
+      "规则要提前说清楚，执行时少争输赢，多守住时间和内容边界。",
+      "我们一起定游戏时间、结束提醒和替代活动，规则定了就按规则执行。",
+      "大春之道幸福驿站提醒：先理解手机满足了什么，再一起定可执行边界。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 961
+  },
+  {
+    "id": 86,
+    "type": "response_card",
+    "title": "孩子刷短视频停不下来",
+    "category": "手机网络",
+    "tags": [
+      "手机网络",
+      "短视频",
+      "手机",
+      "自控",
+      "扩展常见问题"
+    ],
+    "summary": "把控制手机改成管理时间和替代活动。",
+    "scripts": [
+      "短视频停不下来，不只是自控差，它本来就容易让人一直刷。",
+      "手机问题先看它满足了陪伴、放松、成就还是逃避，再谈规则。",
+      "规则要提前说清楚，执行时少争输赢，多守住时间和内容边界。",
+      "我们先把刷视频放到固定时段，结束后马上接一个具体活动。",
+      "大春之道幸福驿站提醒：把控制手机改成管理时间和替代活动。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 619
+  },
+  {
+    "id": 87,
+    "type": "response_card",
+    "title": "孩子偷偷玩手机",
+    "category": "手机网络",
+    "tags": [
+      "手机网络",
+      "偷偷",
+      "手机",
+      "信任",
+      "扩展常见问题"
+    ],
+    "summary": "先修复信任，再讨论规则。",
+    "scripts": [
+      "你偷偷玩手机，我会担心，但我更想先把信任修回来。",
+      "手机问题先看它满足了陪伴、放松、成就还是逃避，再谈规则。",
+      "规则要提前说清楚，执行时少争输赢，多守住时间和内容边界。",
+      "我们把手机使用规则重新写清楚，也把你担心被限制的地方说出来。",
+      "大春之道幸福驿站提醒：先修复信任，再讨论规则。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 756
+  },
+  {
+    "id": 88,
+    "type": "response_card",
+    "title": "孩子因为手机和家长吵架",
+    "category": "手机网络",
+    "tags": [
+      "手机网络",
+      "手机",
+      "吵架",
+      "边界",
+      "扩展常见问题"
+    ],
+    "summary": "先降火，再谈规则，不在情绪最高点裁判。",
+    "scripts": [
+      "我们现在因为手机吵起来，说明情绪已经盖过了问题本身。",
+      "手机问题先看它满足了陪伴、放松、成就还是逃避，再谈规则。",
+      "规则要提前说清楚，执行时少争输赢，多守住时间和内容边界。",
+      "先暂停十分钟，等声音降下来再只谈一条规则和一个后果。",
+      "大春之道幸福驿站提醒：先降火，再谈规则，不在情绪最高点裁判。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 960
+  },
+  {
+    "id": 89,
+    "type": "response_card",
+    "title": "孩子网课时开小差",
+    "category": "手机网络",
+    "tags": [
+      "手机网络",
+      "网课",
+      "专注",
+      "学习",
+      "扩展常见问题"
+    ],
+    "summary": "把问题具体到环境、时段和任务，而不是贴懒散标签。",
+    "scripts": [
+      "网课开小差可能和屏幕、环境、任务感都有关，不先给你贴懒散标签。",
+      "手机问题先看它满足了陪伴、放松、成就还是逃避，再谈规则。",
+      "规则要提前说清楚，执行时少争输赢，多守住时间和内容边界。",
+      "我们把桌面、设备和课间安排调一下，先测试一节课是否更专注。",
+      "大春之道幸福驿站提醒：把问题具体到环境、时段和任务，而不是贴懒散标签。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 3785
+  },
+  {
+    "id": 90,
+    "type": "response_card",
+    "title": "孩子在网上被负面信息影响",
+    "category": "手机网络",
+    "tags": [
+      "手机网络",
+      "网络",
+      "安全",
+      "情绪",
+      "扩展常见问题"
+    ],
+    "summary": "先听孩子看到后的感受，再补安全判断。",
+    "scripts": [
+      "你在网上看到不舒服的内容，我先关心你心里受到什么影响。",
+      "手机问题先看它满足了陪伴、放松、成就还是逃避，再谈规则。",
+      "规则要提前说清楚，执行时少争输赢，多守住时间和内容边界。",
+      "我们一起判断信息来源和安全风险，必要时马上停止接触并找可信大人。",
+      "大春之道幸福驿站提醒：先听孩子看到后的感受，再补安全判断。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1949
+  },
+  {
+    "id": 91,
+    "type": "response_card",
+    "title": "孩子动不动就发脾气",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "发脾气",
+      "情绪",
+      "表达",
+      "扩展常见问题"
+    ],
+    "summary": "先帮孩子命名情绪，再谈行为边界。",
+    "scripts": [
+      "你发脾气时，我先知道你心里一定有很大的不舒服。",
+      "情绪先被看见，行为再被规范；不把孩子的情绪等同于品格问题。",
+      "可以有情绪，但不能用伤人、摔东西、逃避责任的方式表达。",
+      "你可以生气，但不能伤人或摔东西；我们先用一句话说出你在气什么。",
+      "大春之道幸福驿站提醒：先帮孩子命名情绪，再谈行为边界。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 2520
+  },
+  {
+    "id": 92,
+    "type": "response_card",
+    "title": "孩子总把错推给别人",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "推卸",
+      "责任",
+      "转念",
+      "扩展常见问题"
+    ],
+    "summary": "从追究谁错，转为看自己下一步能做什么。",
+    "scripts": [
+      "你急着说不是自己的错，可能是害怕被骂或被否定。",
+      "情绪先被看见，行为再被规范；不把孩子的情绪等同于品格问题。",
+      "可以有情绪，但不能用伤人、摔东西、逃避责任的方式表达。",
+      "我们先不追究谁最错，只看这件事里你下一步能负责什么。",
+      "大春之道幸福驿站提醒：从追究谁错，转为看自己下一步能做什么。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 603
+  },
+  {
+    "id": 93,
+    "type": "response_card",
+    "title": "孩子遇到挫折就崩溃",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "挫折",
+      "崩溃",
+      "韧性",
+      "扩展常见问题"
+    ],
+    "summary": "先陪他恢复，再复盘经验。",
+    "scripts": [
+      "这次挫折让你崩溃，说明它对你很重要，不是你太脆弱。",
+      "情绪先被看见，行为再被规范；不把孩子的情绪等同于品格问题。",
+      "可以有情绪，但不能用伤人、摔东西、逃避责任的方式表达。",
+      "先休息一下，等情绪降下来，我们只复盘一个以后能用的经验。",
+      "大春之道幸福驿站提醒：先陪他恢复，再复盘经验。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 39
+  },
+  {
+    "id": 94,
+    "type": "response_card",
+    "title": "孩子总说没意思",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "没意思",
+      "动力",
+      "幸福",
+      "扩展常见问题"
+    ],
+    "summary": "先了解空心感来自哪里，再增加可体验的小成就。",
+    "scripts": [
+      "你说没意思，我会认真听，因为这可能是在说累、空、没成就感。",
+      "情绪先被看见，行为再被规范；不把孩子的情绪等同于品格问题。",
+      "可以有情绪，但不能用伤人、摔东西、逃避责任的方式表达。",
+      "我们先找一个今天能完成的小事，让身体和心里先有一点点动起来。",
+      "大春之道幸福驿站提醒：先了解空心感来自哪里，再增加可体验的小成就。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 4380
+  },
+  {
+    "id": 95,
+    "type": "response_card",
+    "title": "孩子不愿意表达真实想法",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "表达",
+      "真实",
+      "倾听",
+      "扩展常见问题"
+    ],
+    "summary": "减少评判，让孩子知道说出来不会马上被教育。",
+    "scripts": [
+      "你不愿说真实想法，可能是以前一说就被评价或教育。",
+      "情绪先被看见，行为再被规范；不把孩子的情绪等同于品格问题。",
+      "可以有情绪，但不能用伤人、摔东西、逃避责任的方式表达。",
+      "我先只听三分钟，不反驳、不讲道理，你说完我再确认我听懂没有。",
+      "大春之道幸福驿站提醒：减少评判，让孩子知道说出来不会马上被教育。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 931
+  },
+  {
+    "id": 96,
+    "type": "response_card",
+    "title": "孩子特别敏感玻璃心",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "敏感",
+      "自尊",
+      "情绪",
+      "扩展常见问题"
+    ],
+    "summary": "先承认感受，再帮助他区分事实和想法。",
+    "scripts": [
+      "你敏感不是坏事，说明你很在意别人怎么看，也很需要被尊重。",
+      "情绪先被看见，行为再被规范；不把孩子的情绪等同于品格问题。",
+      "可以有情绪，但不能用伤人、摔东西、逃避责任的方式表达。",
+      "我们把事实和想法分开：对方说了什么，你心里又怎么理解。",
+      "大春之道幸福驿站提醒：先承认感受，再帮助他区分事实和想法。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1850
+  },
+  {
+    "id": 97,
+    "type": "response_card",
+    "title": "孩子总和兄弟姐妹比较",
+    "category": "情绪行为",
+    "tags": [
+      "情绪行为",
+      "比较",
+      "手足",
+      "自我",
+      "扩展常见问题"
+    ],
+    "summary": "把比较转成各自优势和各自成长。",
+    "scripts": [
+      "你总拿自己和别人比，背后可能是想确认自己也有价值。",
+      "情绪先被看见，行为再被规范；不把孩子的情绪等同于品格问题。",
+      "可以有情绪，但不能用伤人、摔东西、逃避责任的方式表达。",
+      "我们今天只比自己上周的一个进步，也说出你独有的一个优势。",
+      "大春之道幸福驿站提醒：把比较转成各自优势和各自成长。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 570
+  },
+  {
+    "id": 98,
+    "type": "response_card",
+    "title": "孩子嫌父母唠叨",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "唠叨",
+      "沟通",
+      "关系",
+      "扩展常见问题"
+    ],
+    "summary": "减少重复说教，先问孩子需要哪种提醒。",
+    "scripts": [
+      "你嫌我唠叨，我先反省：也许我重复太多，让关心变成了压力。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "以后提醒前我先问你要不要听建议；如果要，我只说一遍重点。",
+      "大春之道幸福驿站提醒：减少重复说教，先问孩子需要哪种提醒。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 2135
+  },
+  {
+    "id": 99,
+    "type": "response_card",
+    "title": "孩子什么都不愿意跟父母说",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "不说",
+      "沟通",
+      "信任",
+      "扩展常见问题"
+    ],
+    "summary": "先从不追问的小聊天开始恢复安全感。",
+    "scripts": [
+      "你不想说，我先尊重；关系安全了，话才会慢慢回来。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "今天不追问大事，只聊一个轻松话题，让你知道说话不会马上被教育。",
+      "大春之道幸福驿站提醒：先从不追问的小聊天开始恢复安全感。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 664
+  },
+  {
+    "id": 100,
+    "type": "response_card",
+    "title": "父母一开口孩子就反感",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "反感",
+      "说话",
+      "善解人意",
+      "扩展常见问题"
+    ],
+    "summary": "先调整语气和目的，不把关心说成审问。",
+    "scripts": [
+      "我一开口你就反感，可能是你听到的不是关心，而是审问和要求。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "我先把语气放慢，只说我的担心，再问你愿意听哪一部分。",
+      "大春之道幸福驿站提醒：先调整语气和目的，不把关心说成审问。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1617
+  },
+  {
+    "id": 101,
+    "type": "response_card",
+    "title": "孩子说父母不懂自己",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "不懂",
+      "理解",
+      "倾听",
+      "扩展常见问题"
+    ],
+    "summary": "先复述孩子的意思，让他感到被看见。",
+    "scripts": [
+      "你说我不懂你，我先不反驳，我想知道我具体哪一点没听懂。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "你说一遍，我复述一遍；如果我复述错了，你帮我纠正。",
+      "大春之道幸福驿站提醒：先复述孩子的意思，让他感到被看见。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1038
+  },
+  {
+    "id": 102,
+    "type": "response_card",
+    "title": "父母忍不住吼孩子",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "吼",
+      "情绪",
+      "转念",
+      "扩展常见问题"
+    ],
+    "summary": "家长先暂停转念，再回到关系里说话。",
+    "scripts": [
+      "我刚才声音大了，这会伤关系，我先为这个部分道歉。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "等我情绪稳住再谈事情，今天我先把一句责备换成一句请求。",
+      "大春之道幸福驿站提醒：家长先暂停转念，再回到关系里说话。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1909
+  },
+  {
+    "id": 103,
+    "type": "response_card",
+    "title": "孩子总顶嘴抬杠",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "顶嘴",
+      "抬杠",
+      "边界",
+      "扩展常见问题"
+    ],
+    "summary": "听出孩子要自主的信号，同时守住基本尊重。",
+    "scripts": [
+      "你顶嘴时，我听见你想表达自己的想法，也听见我们都需要更尊重。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "你可以不同意，但不能用伤人的话；我们一人说一分钟，不抢话。",
+      "大春之道幸福驿站提醒：听出孩子要自主的信号，同时守住基本尊重。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 124
+  },
+  {
+    "id": 104,
+    "type": "response_card",
+    "title": "家里一谈学习就紧张",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "学习",
+      "紧张",
+      "家庭氛围",
+      "扩展常见问题"
+    ],
+    "summary": "把学习谈话从审判改成共同解决问题。",
+    "scripts": [
+      "家里一谈学习就紧张，说明学习已经被我们说成了压力。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "今天只谈一个可解决的小问题，不翻旧账，不给整个人下结论。",
+      "大春之道幸福驿站提醒：把学习谈话从审判改成共同解决问题。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 3836
+  },
+  {
+    "id": 105,
+    "type": "response_card",
+    "title": "孩子觉得父母只看成绩",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "成绩",
+      "价值",
+      "亲子",
+      "扩展常见问题"
+    ],
+    "summary": "明确告诉孩子人比成绩重要，再一起看成绩。",
+    "scripts": [
+      "成绩下降先不等于退步的人，可能是状态、方法或节奏出了问题。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "我们先复盘最近两周发生了什么，只找一个最可能影响成绩的原因。",
+      "大春之道幸福驿站提醒：明确告诉孩子人比成绩重要，再一起看成绩。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1735
+  },
+  {
+    "id": 106,
+    "type": "response_card",
+    "title": "孩子做错事不敢承认",
+    "category": "亲子沟通",
+    "tags": [
+      "亲子沟通",
+      "承认",
+      "错误",
+      "安全",
+      "扩展常见问题"
+    ],
+    "summary": "先让孩子知道承认不会失去爱，再处理后果。",
+    "scripts": [
+      "你不敢承认，可能是怕承认以后就失去爱和信任。",
+      "先善解人意，听懂孩子话后面的委屈、需要和自主感。",
+      "父母表达关心时要少审问、少补刀，把目的说成连接而不是控制。",
+      "承认错误不会让我们不爱你，但后果需要一起面对并补救。",
+      "大春之道幸福驿站提醒：先让孩子知道承认不会失去爱，再处理后果。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 973
+  },
+  {
+    "id": 107,
+    "type": "response_card",
+    "title": "孩子不遵守约定",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "约定",
+      "规则",
+      "执行",
+      "扩展常见问题"
+    ],
+    "summary": "约定要少、清楚、可执行，并提前说明后果。",
+    "scripts": [
+      "你没遵守约定，我先看约定是不是太多、太模糊或没提前说清后果。",
+      "规则不是压服孩子，而是帮助孩子在自由里练习承担后果。",
+      "少定规则，定清楚规则；说到做到，比临时加码更有力量。",
+      "我们只保留一条最重要的约定，写清时间、做法和后果。",
+      "大春之道幸福驿站提醒：约定要少、清楚、可执行，并提前说明后果。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 192
+  },
+  {
+    "id": 108,
+    "type": "response_card",
+    "title": "孩子总讨价还价",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "讨价还价",
+      "边界",
+      "规则",
+      "扩展常见问题"
+    ],
+    "summary": "允许表达想法，但核心规则不随情绪改变。",
+    "scripts": [
+      "你讨价还价，说明你有自己的想法，我愿意先听。",
+      "规则不是压服孩子，而是帮助孩子在自由里练习承担后果。",
+      "少定规则，定清楚规则；说到做到，比临时加码更有力量。",
+      "可以讨论执行方式，但底线规则不随情绪变化。",
+      "大春之道幸福驿站提醒：允许表达想法，但核心规则不随情绪改变。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 21
+  },
+  {
+    "id": 109,
+    "type": "response_card",
+    "title": "孩子晚上不睡早上不起",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "睡觉",
+      "作息",
+      "习惯",
+      "扩展常见问题"
+    ],
+    "summary": "从作息节律入手，不只批评赖床。",
+    "scripts": [
+      "作息问题不是早上骂就能解决，要从晚上开始调整。",
+      "规则不是压服孩子，而是帮助孩子在自由里练习承担后果。",
+      "少定规则，定清楚规则；说到做到，比临时加码更有力量。",
+      "今晚先提前15分钟收尾，睡前手机离开床边，明早按约定起床。",
+      "大春之道幸福驿站提醒：从作息节律入手，不只批评赖床。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1999
+  },
+  {
+    "id": 110,
+    "type": "response_card",
+    "title": "孩子花钱没有节制",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "花钱",
+      "节制",
+      "责任",
+      "扩展常见问题"
+    ],
+    "summary": "把钱变成练习选择和承担后果的工具。",
+    "scripts": [
+      "你想花钱买东西，我先不说浪费，我们先看这是需要还是冲动。",
+      "规则不是压服孩子，而是帮助孩子在自由里练习承担后果。",
+      "少定规则，定清楚规则；说到做到，比临时加码更有力量。",
+      "把钱分成必要、想要和储蓄三部分，这次由你做选择并承担结果。",
+      "大春之道幸福驿站提醒：把钱变成练习选择和承担后果的工具。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 528
+  },
+  {
+    "id": 111,
+    "type": "response_card",
+    "title": "孩子做事三分钟热度",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "坚持",
+      "习惯",
+      "能力",
+      "扩展常见问题"
+    ],
+    "summary": "把坚持变成短周期反馈，而不是靠意志硬扛。",
+    "scripts": [
+      "三分钟热度不代表你没毅力，可能是目标太大、反馈太慢。",
+      "规则不是压服孩子，而是帮助孩子在自由里练习承担后果。",
+      "少定规则，定清楚规则；说到做到，比临时加码更有力量。",
+      "我们把坚持改成7天小挑战，每天只做一个可打勾的动作。",
+      "大春之道幸福驿站提醒：把坚持变成短周期反馈，而不是靠意志硬扛。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 3669
+  },
+  {
+    "id": 112,
+    "type": "response_card",
+    "title": "孩子不做家务",
+    "category": "规则边界",
+    "tags": [
+      "规则边界",
+      "家务",
+      "责任",
+      "家庭",
+      "扩展常见问题"
+    ],
+    "summary": "把家务说成家庭贡献，不说成惩罚。",
+    "scripts": [
+      "家务不是惩罚，而是家里每个人都在为生活出一份力。",
+      "规则不是压服孩子，而是帮助孩子在自由里练习承担后果。",
+      "少定规则，定清楚规则；说到做到，比临时加码更有力量。",
+      "你先选一项固定家务，做法和时间说清楚，完成后不额外说教。",
+      "大春之道幸福驿站提醒：把家务说成家庭贡献，不说成惩罚。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1564
+  },
+  {
+    "id": 113,
+    "type": "response_card",
+    "title": "孩子和老师关系紧张",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "老师",
+      "关系",
+      "家校共育",
+      "扩展常见问题"
+    ],
+    "summary": "先理解双方处境，再帮孩子学会表达诉求。",
+    "scripts": [
+      "你和老师关系紧张，我先听你经历了什么，也会理解老师的处境。",
+      "学校问题先还原事实，再理解孩子、老师和家长各自的处境。",
+      "家校共育要站同盟立场：保护孩子，也支持孩子学习面对规则。",
+      "我们先练一段向老师表达诉求的话，再决定是否由家长协助沟通。",
+      "大春之道幸福驿站提醒：先理解双方处境，再帮孩子学会表达诉求。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 5461
+  },
+  {
+    "id": 114,
+    "type": "response_card",
+    "title": "孩子被老师批评后很受伤",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "批评",
+      "老师",
+      "自尊",
+      "扩展常见问题"
+    ],
+    "summary": "先接住委屈，再分清评价和成长建议。",
+    "scripts": [
+      "被老师批评后受伤很正常，批评的是事情，不等于否定你这个人。",
+      "学校问题先还原事实，再理解孩子、老师和家长各自的处境。",
+      "家校共育要站同盟立场：保护孩子，也支持孩子学习面对规则。",
+      "我们分开看：老师提醒了哪件事，你可以改哪一个动作。",
+      "大春之道幸福驿站提醒：先接住委屈，再分清评价和成长建议。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 4335
+  },
+  {
+    "id": 115,
+    "type": "response_card",
+    "title": "家长不知道怎么和老师沟通",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "家校",
+      "老师",
+      "沟通",
+      "扩展常见问题"
+    ],
+    "summary": "先表达同盟立场，再具体描述孩子情况。",
+    "scripts": [
+      "家长和老师沟通前，先把目标放在帮助孩子，而不是证明谁对。",
+      "学校问题先还原事实，再理解孩子、老师和家长各自的处境。",
+      "家校共育要站同盟立场：保护孩子，也支持孩子学习面对规则。",
+      "我会具体描述现象、询问建议，并和老师约定一个可观察的小目标。",
+      "大春之道幸福驿站提醒：先表达同盟立场，再具体描述孩子情况。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 4276
+  },
+  {
+    "id": 116,
+    "type": "response_card",
+    "title": "孩子不喜欢某个老师",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "老师",
+      "喜欢",
+      "适应",
+      "扩展常见问题"
+    ],
+    "summary": "不急着站队，先帮孩子找可适应的学习方式。",
+    "scripts": [
+      "你不喜欢某位老师，我先不逼你喜欢，也不急着站队。",
+      "学校问题先还原事实，再理解孩子、老师和家长各自的处境。",
+      "家校共育要站同盟立场：保护孩子，也支持孩子学习面对规则。",
+      "我们先找这门课你能适应的一种学习办法，同时保持基本尊重。",
+      "大春之道幸福驿站提醒：不急着站队，先帮孩子找可适应的学习方式。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 4707
+  },
+  {
+    "id": 117,
+    "type": "response_card",
+    "title": "孩子在学校没有存在感",
+    "category": "校园情况",
+    "tags": [
+      "校园情况",
+      "学校",
+      "存在感",
+      "社交",
+      "扩展常见问题"
+    ],
+    "summary": "先寻找孩子的小优势，再创造被看见的机会。",
+    "scripts": [
+      "你在学校没存在感，这会让人孤单，我不会简单说你想太多。",
+      "学校问题先还原事实，再理解孩子、老师和家长各自的处境。",
+      "家校共育要站同盟立场：保护孩子，也支持孩子学习面对规则。",
+      "我们先找一个你能参与的小角色，让别人有机会看见你。",
+      "大春之道幸福驿站提醒：先寻找孩子的小优势，再创造被看见的机会。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 590
+  },
+  {
+    "id": 118,
+    "type": "response_card",
+    "title": "孩子没有朋友",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "社交",
+      "孤单",
+      "扩展常见问题"
+    ],
+    "summary": "先减少焦虑，再从一个低压力连接开始。",
+    "scripts": [
+      "没有朋友会难受，但这不说明你不值得被喜欢。",
+      "同伴问题先稳住孩子的自我价值，再看关系里发生了什么。",
+      "交朋友要有善意，也要有边界；不讨好，不攻击，不孤立自己。",
+      "先从一个低压力连接开始，比如和一个同学打招呼或一起完成一件小事。",
+      "大春之道幸福驿站提醒：先减少焦虑，再从一个低压力连接开始。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 723
+  },
+  {
+    "id": 119,
+    "type": "response_card",
+    "title": "孩子总讨好同学",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "讨好",
+      "朋友",
+      "边界",
+      "扩展常见问题"
+    ],
+    "summary": "帮孩子区分友善和失去自我。",
+    "scripts": [
+      "你总讨好别人，可能是太害怕失去关系。",
+      "同伴问题先稳住孩子的自我价值，再看关系里发生了什么。",
+      "交朋友要有善意，也要有边界；不讨好，不攻击，不孤立自己。",
+      "我们练习一句有边界的话：我愿意帮忙，但这件事我现在做不到。",
+      "大春之道幸福驿站提醒：帮孩子区分友善和失去自我。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 722
+  },
+  {
+    "id": 120,
+    "type": "response_card",
+    "title": "孩子被同伴排斥",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "排斥",
+      "同学",
+      "支持",
+      "扩展常见问题"
+    ],
+    "summary": "先稳住自我价值，再分析关系和求助路径。",
+    "scripts": [
+      "被同伴排斥很疼，我先站在你这边稳住你，不急着叫你忍。",
+      "同伴问题先稳住孩子的自我价值，再看关系里发生了什么。",
+      "交朋友要有善意，也要有边界；不讨好，不攻击，不孤立自己。",
+      "我们一起分清是误会、冲突还是欺负，再找老师或可信大人支持。",
+      "大春之道幸福驿站提醒：先稳住自我价值，再分析关系和求助路径。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 516
+  },
+  {
+    "id": 121,
+    "type": "response_card",
+    "title": "孩子和同学闹矛盾",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "矛盾",
+      "同学",
+      "沟通",
+      "扩展常见问题"
+    ],
+    "summary": "先让孩子讲事实，再练习表达感受和请求。",
+    "scripts": [
+      "和同学闹矛盾，先把事实说清楚，比急着判谁错更重要。",
+      "同伴问题先稳住孩子的自我价值，再看关系里发生了什么。",
+      "交朋友要有善意，也要有边界；不讨好，不攻击，不孤立自己。",
+      "你试着用我感到、我希望来说一遍，不用攻击对方。",
+      "大春之道幸福驿站提醒：先让孩子讲事实，再练习表达感受和请求。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1918
+  },
+  {
+    "id": 122,
+    "type": "response_card",
+    "title": "孩子交到让父母担心的朋友",
+    "category": "同伴社交",
+    "tags": [
+      "同伴社交",
+      "朋友",
+      "担心",
+      "边界",
+      "扩展常见问题"
+    ],
+    "summary": "先了解朋友吸引孩子什么，再谈风险。",
+    "scripts": [
+      "让我担心的朋友，我不会先否定他，我想知道他哪里吸引你。",
+      "同伴问题先稳住孩子的自我价值，再看关系里发生了什么。",
+      "交朋友要有善意，也要有边界；不讨好，不攻击，不孤立自己。",
+      "我们一起看这段关系有没有让你变好、变乱或碰到风险底线。",
+      "大春之道幸福驿站提醒：先了解朋友吸引孩子什么，再谈风险。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 794
+  },
+  {
+    "id": 123,
+    "type": "response_card",
+    "title": "孩子进入青春期不让管",
+    "category": "青春期",
+    "tags": [
+      "青春期",
+      "自主",
+      "边界",
+      "扩展常见问题"
+    ],
+    "summary": "把管控改成尊重加底线。",
+    "scripts": [
+      "你不让我管，我听见你在要空间，也在练习自己做主。",
+      "青春期的核心不是对抗父母，而是在练习独立和自我认同。",
+      "给空间但不断联，尊重隐私但守住安全、尊重和责任底线。",
+      "我会减少控制，但安全、尊重和责任这三条底线必须一起守住。",
+      "大春之道幸福驿站提醒：把管控改成尊重加底线。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 56
+  },
+  {
+    "id": 124,
+    "type": "response_card",
+    "title": "孩子开始注重外貌",
+    "category": "青春期",
+    "tags": [
+      "青春期",
+      "外貌",
+      "自我",
+      "扩展常见问题"
+    ],
+    "summary": "先尊重自我意识，再引导健康审美。",
+    "scripts": [
+      "你开始在意外貌，说明你在形成自我形象，这很正常。",
+      "青春期的核心不是对抗父母，而是在练习独立和自我认同。",
+      "给空间但不断联，尊重隐私但守住安全、尊重和责任底线。",
+      "我们可以聊穿搭和形象，也要一起守住健康、舒服和尊重自己。",
+      "大春之道幸福驿站提醒：先尊重自我意识，再引导健康审美。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 316
+  },
+  {
+    "id": 125,
+    "type": "response_card",
+    "title": "孩子有喜欢的人",
+    "category": "青春期",
+    "tags": [
+      "青春期",
+      "早恋",
+      "喜欢",
+      "扩展常见问题"
+    ],
+    "summary": "先正常化情感，再谈边界和责任。",
+    "scripts": [
+      "有喜欢的人是青春期很正常的情感，不需要羞耻。",
+      "青春期的核心不是对抗父母，而是在练习独立和自我认同。",
+      "给空间但不断联，尊重隐私但守住安全、尊重和责任底线。",
+      "喜欢可以被尊重，但边界、学习节奏和保护自己也要说清楚。",
+      "大春之道幸福驿站提醒：先正常化情感，再谈边界和责任。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 799
+  },
+  {
+    "id": 126,
+    "type": "response_card",
+    "title": "孩子不愿意和父母亲近",
+    "category": "青春期",
+    "tags": [
+      "青春期",
+      "距离",
+      "关系",
+      "扩展常见问题"
+    ],
+    "summary": "给空间但不断联，让孩子知道家还在。",
+    "scripts": [
+      "你不想和父母太亲近，我会有失落，但我也尊重你长大的距离。",
+      "青春期的核心不是对抗父母，而是在练习独立和自我认同。",
+      "给空间但不断联，尊重隐私但守住安全、尊重和责任底线。",
+      "我不强行靠近，只保持稳定关心；你需要时，家一直在。",
+      "大春之道幸福驿站提醒：给空间但不断联，让孩子知道家还在。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1820
+  },
+  {
+    "id": 127,
+    "type": "response_card",
+    "title": "孩子对未来很迷茫",
+    "category": "青春期",
+    "tags": [
+      "青春期",
+      "未来",
+      "迷茫",
+      "目标",
+      "扩展常见问题"
+    ],
+    "summary": "从体验和选择开始，不急着定终身答案。",
+    "scripts": [
+      "你对未来迷茫，不代表你没出息，只是还没有足够体验来做判断。",
+      "青春期的核心不是对抗父母，而是在练习独立和自我认同。",
+      "给空间但不断联，尊重隐私但守住安全、尊重和责任底线。",
+      "我们先不定终身答案，只安排一次体验、一次访谈或一个小目标。",
+      "大春之道幸福驿站提醒：从体验和选择开始，不急着定终身答案。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 523
+  },
+  {
+    "id": 128,
+    "type": "response_card",
+    "title": "父母总担心孩子输在起跑线",
+    "category": "父母成长",
+    "tags": [
+      "父母成长",
+      "起跑线",
+      "焦虑",
+      "观念",
+      "扩展常见问题"
+    ],
+    "summary": "先看见自己的焦虑，再把焦点放回孩子成长节奏。",
+    "scripts": [
+      "我担心你输在起跑线，其实先暴露的是我的焦虑。",
+      "父母先转念：孩子的问题常常在提醒我们调整关系和方法。",
+      "先稳住自己，再影响孩子；父母一焦虑，很多正确的话也会变味。",
+      "我先把比较放下，回到你现在的节奏和真正需要补上的能力。",
+      "大春之道幸福驿站提醒：先看见自己的焦虑，再把焦点放回孩子成长节奏。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 496
+  },
+  {
+    "id": 129,
+    "type": "response_card",
+    "title": "父母控制不住比较孩子",
+    "category": "父母成长",
+    "tags": [
+      "父母成长",
+      "比较",
+      "焦虑",
+      "父母",
+      "扩展常见问题"
+    ],
+    "summary": "把别人家的孩子变成参照，不变成伤害。",
+    "scripts": [
+      "你总拿自己和别人比，背后可能是想确认自己也有价值。",
+      "父母先转念：孩子的问题常常在提醒我们调整关系和方法。",
+      "先稳住自己，再影响孩子；父母一焦虑，很多正确的话也会变味。",
+      "我们今天只比自己上周的一个进步，也说出你独有的一个优势。",
+      "大春之道幸福驿站提醒：把别人家的孩子变成参照，不变成伤害。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1838
+  },
+  {
+    "id": 130,
+    "type": "response_card",
+    "title": "父母意见不一致",
+    "category": "父母成长",
+    "tags": [
+      "父母成长",
+      "父母",
+      "一致",
+      "家庭",
+      "扩展常见问题"
+    ],
+    "summary": "先统一底层原则，再在孩子面前减少拉扯。",
+    "scripts": [
+      "父母意见不一致时，孩子最容易夹在中间。",
+      "父母先转念：孩子的问题常常在提醒我们调整关系和方法。",
+      "先稳住自己，再影响孩子；父母一焦虑，很多正确的话也会变味。",
+      "我们先私下统一底层原则，再到孩子面前给出一致、简短的规则。",
+      "大春之道幸福驿站提醒：先统一底层原则，再在孩子面前减少拉扯。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 2668
+  },
+  {
+    "id": 131,
+    "type": "response_card",
+    "title": "家长学习很多却用不出来",
+    "category": "父母成长",
+    "tags": [
+      "父母成长",
+      "学习",
+      "落地",
+      "转念",
+      "扩展常见问题"
+    ],
+    "summary": "先抓一个场景练习，不追求一次全改。",
+    "scripts": [
+      "我先把“学习很多却用不出来”当作一个需要理解的信号，不急着给你下结论。",
+      "父母先转念：孩子的问题常常在提醒我们调整关系和方法。",
+      "先稳住自己，再影响孩子；父母一焦虑，很多正确的话也会变味。",
+      "我们围绕“学习很多却用不出来”只找一个最小可行动作，先让事情往前走一点。",
+      "大春之道幸福驿站提醒：先抓一个场景练习，不追求一次全改。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 4013
+  },
+  {
+    "id": 132,
+    "type": "response_card",
+    "title": "家里负能量太多",
+    "category": "父母成长",
+    "tags": [
+      "父母成长",
+      "家庭幸福",
+      "能量",
+      "氛围",
+      "扩展常见问题"
+    ],
+    "summary": "先从一个人转念开始，改变家庭说话空气。",
+    "scripts": [
+      "家里负能量大时，先从一个人改变说话空气开始。",
+      "父母先转念：孩子的问题常常在提醒我们调整关系和方法。",
+      "先稳住自己，再影响孩子；父母一焦虑，很多正确的话也会变味。",
+      "我今天先停止一句抱怨，换成一个可执行请求。",
+      "大春之道幸福驿站提醒：先从一个人转念开始，改变家庭说话空气。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 399
+  },
+  {
+    "id": 133,
+    "type": "response_card",
+    "title": "父母不知道如何鼓励孩子",
+    "category": "父母成长",
+    "tags": [
+      "父母成长",
+      "鼓励",
+      "看见",
+      "优势",
+      "扩展常见问题"
+    ],
+    "summary": "鼓励具体行为和品质，不空泛夸聪明。",
+    "scripts": [
+      "鼓励不是夸聪明，而是让孩子看见自己做对了什么。",
+      "父母先转念：孩子的问题常常在提醒我们调整关系和方法。",
+      "先稳住自己，再影响孩子；父母一焦虑，很多正确的话也会变味。",
+      "我会具体说出你的努力、方法或坚持，让你知道好在哪里。",
+      "大春之道幸福驿站提醒：鼓励具体行为和品质，不空泛夸聪明。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 521
+  },
+  {
+    "id": 134,
+    "type": "response_card",
+    "title": "父母担心自己教育失败",
+    "category": "父母成长",
+    "tags": [
+      "父母成长",
+      "失败",
+      "焦虑",
+      "父母",
+      "扩展常见问题"
+    ],
+    "summary": "先把自责放下，今天修复一句话就有价值。",
+    "scripts": [
+      "我担心自己教育失败，先说明我已经很焦虑，不能把这份焦虑压给孩子。",
+      "父母先转念：孩子的问题常常在提醒我们调整关系和方法。",
+      "先稳住自己，再影响孩子；父母一焦虑，很多正确的话也会变味。",
+      "今天先修复一句话、一个眼神或一次陪伴，关系恢复就是进步。",
+      "大春之道幸福驿站提醒：先把自责放下，今天修复一句话就有价值。先转念、再开口，先扶正关系，再解决问题。"
+    ],
+    "tip": "大春之道幸福驿站口径：先稳关系，再找生活里的因；先转念，再发问；先让孩子情绪上接受，再给方法。",
+    "riskLevel": "normal",
+    "sourceScore": 1951
+  }
+];
+    const CHAT_TOPICS = [
+  {
+    "id": 1,
+    "type": "chat_topic",
+    "title": "我们都说一个小秘密来交换",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "我们都说一个小秘密来交换，怎么样？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 2,
+    "type": "chat_topic",
+    "title": "今天在学校跟谁聊天了",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "今天在学校跟谁聊天了，为什么喜欢跟他聊天呢，你这么问就可以",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 3,
+    "type": "chat_topic",
+    "title": "儿子",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "儿子，你觉得自己有哪些优点呢？有哪 些缺点呢？家长这时候要多去启发、多肯定孩子",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 4,
+    "type": "chat_topic",
+    "title": "我们来玩个游戏吧",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "我们来玩个游戏吧，一人说一件今天开心和不开心的是",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 5,
+    "type": "chat_topic",
+    "title": "你觉得自己幸福吗",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天"
+    ],
+    "prompt": "你觉得自己幸福吗？幸福是什么？幸福的家庭是什么样的？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 6,
+    "type": "chat_topic",
+    "title": "如果你能变成一个动画人物",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天"
+    ],
+    "prompt": "如果你能变成一个动画人物，你最想成为谁呢？为什么呀？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 7,
+    "type": "chat_topic",
+    "title": "儿子",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天"
+    ],
+    "prompt": "儿子，你觉得自己快乐吗？那怎么能够更快乐呢？这个可以提升孩子对幸福快乐的认知，和",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 8,
+    "type": "chat_topic",
+    "title": "儿子",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "儿子，如果妈妈生气了，你会怎么来哄 妈妈呢?",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 9,
+    "type": "chat_topic",
+    "title": "儿子",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天"
+    ],
+    "prompt": "儿子，妈妈今天有点累了，可不可以给妈妈讲一个睡前故事，让妈妈放松一下再睡觉呢",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 10,
+    "type": "chat_topic",
+    "title": "儿子",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "儿子，如果让你当老师，你会怎么管理那些特别调皮捣蛋的孩子呢？这其实可以培养孩子的自 我管理能力",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 11,
+    "type": "chat_topic",
+    "title": "如果有同学好几次都在班里说你",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "如果有同学好几次都在班里说你的坏话，你会怎么处理呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 12,
+    "type": "chat_topic",
+    "title": "如果你有 100 块钱",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天"
+    ],
+    "prompt": "如果你有 100 块钱，你打算怎么花掉呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 13,
+    "type": "chat_topic",
+    "title": "如果换你做一天妈妈",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天"
+    ],
+    "prompt": "如果换你做一天妈妈，你会怎么来管理我们全家人一天的生活呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 14,
+    "type": "chat_topic",
+    "title": "你们班同学都是怎么评价你的",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "你们班同学都是怎么评价你的？哎，你觉得他们的评价客观吗？你喜欢他们用什么词来形容你 的呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 15,
+    "type": "chat_topic",
+    "title": "你认为上学的好处多呢",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天"
+    ],
+    "prompt": "你认为上学的好处多呢，还是坏处多呢？哎，具体说说看呀",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 16,
+    "type": "chat_topic",
+    "title": "放假的时候你打算去哪里玩呢",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天"
+    ],
+    "prompt": "放假的时候你打算去哪里玩呢？如果按照你的想法执行的话，你觉得我们需要做哪些准备呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 17,
+    "type": "chat_topic",
+    "title": "如果放学了",
+    "category": "安全与情绪",
+    "tags": [
+      "安全与情绪",
+      "亲子聊天"
+    ],
+    "prompt": "如果放学了，你一个人在家里有陌生人敲门。你不会开门",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 18,
+    "type": "chat_topic",
+    "title": "你感觉幸福美好的家庭都有些什",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天"
+    ],
+    "prompt": "你感觉幸福美好的家庭都有些什么呢？这是提升孩子的幸福认知",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 19,
+    "type": "chat_topic",
+    "title": "今天你跟哪个小朋友的说话最多",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "今天你跟哪个小朋友的说话最多呢",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 20,
+    "type": "chat_topic",
+    "title": "妈妈想听故事",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天"
+    ],
+    "prompt": "妈妈想听故事，你能讲给妈妈听吗？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 21,
+    "type": "chat_topic",
+    "title": "如果你变成一种动物",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "想象力"
+    ],
+    "prompt": "如果你变成一种动物，你最想变成什么？",
+    "summary": "想象力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 22,
+    "type": "chat_topic",
+    "title": "如果爸爸\\妈妈不开心",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天",
+      "关爱能力"
+    ],
+    "prompt": "如果爸爸\\妈妈不开心，你会怎么安慰爸爸\\妈妈呢？",
+    "summary": "关爱能力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 23,
+    "type": "chat_topic",
+    "title": "有道题你认为你的答案对",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天",
+      "主见意识"
+    ],
+    "prompt": "有道题你认为你的答案对，老师讲错了，你会坚持自己的答案吗？",
+    "summary": "主见意识",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 24,
+    "type": "chat_topic",
+    "title": "你感觉幸福美好的家庭都有些什",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天",
+      "幸福认知"
+    ],
+    "prompt": "你感觉幸福美好的家庭都有些什么？",
+    "summary": "幸福认知",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 25,
+    "type": "chat_topic",
+    "title": "如果你可以做一天妈妈",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "幻想式思考"
+    ],
+    "prompt": "如果你可以做一天妈妈，你最想要做的事是什么？",
+    "summary": "幻想式思考",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 26,
+    "type": "chat_topic",
+    "title": "你认为上学的好处多还是坏处多",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "学习价值观"
+    ],
+    "prompt": "你认为上学的好处多还是坏处多？",
+    "summary": "学习价值观",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 27,
+    "type": "chat_topic",
+    "title": "你最喜欢自己哪一点",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天",
+      "帮助孩子了解自己"
+    ],
+    "prompt": "你最喜欢自己哪一点？不喜欢自己哪一点？",
+    "summary": "帮助孩子了解自己",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 28,
+    "type": "chat_topic",
+    "title": "你觉得你长大以后是什么样的",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天",
+      "梦想，自我认知，自我追求"
+    ],
+    "prompt": "你觉得你长大以后是什么样的？",
+    "summary": "梦想，自我认知，自我追求",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 29,
+    "type": "chat_topic",
+    "title": "放学后一个陌生阿姨跟你说妈妈",
+    "category": "安全与情绪",
+    "tags": [
+      "安全与情绪",
+      "亲子聊天",
+      "防骗意识"
+    ],
+    "prompt": "放学后一个陌生阿姨跟你说妈妈有事让她来接你，你会跟阿姨走吗？",
+    "summary": "防骗意识",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 30,
+    "type": "chat_topic",
+    "title": "你感觉自己的天赋才华有哪些",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "你感觉自己的天赋才华有哪些？",
+    "summary": "自我认知",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 31,
+    "type": "chat_topic",
+    "title": "如果不刷牙会怎么样",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "引导小孩子注重刷牙"
+    ],
+    "prompt": "如果不刷牙会怎么样？",
+    "summary": "引导小孩子注重刷牙",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 32,
+    "type": "chat_topic",
+    "title": "什么时候宝贝会觉得妈妈挺讨厌",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "了解孩子心中我们的不足"
+    ],
+    "prompt": "什么时候宝贝会觉得妈妈挺讨厌的？",
+    "summary": "了解孩子心中我们的不足",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 33,
+    "type": "chat_topic",
+    "title": "如果能拥有一个超能力",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "想象力"
+    ],
+    "prompt": "如果能拥有一个超能力，你最希望是什么？",
+    "summary": "想象力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 34,
+    "type": "chat_topic",
+    "title": "你喜欢做小孩还是做大人",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "想象力"
+    ],
+    "prompt": "你喜欢做小孩还是做大人？做大人有什么好处？",
+    "summary": "想象力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 35,
+    "type": "chat_topic",
+    "title": "你最喜欢的笑话是什么",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "培养幽默"
+    ],
+    "prompt": "你最喜欢的笑话是什么？你觉得最好笑的事是？",
+    "summary": "培养幽默",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 36,
+    "type": "chat_topic",
+    "title": "你最喜欢的小动物是什么",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "丰富百科知识"
+    ],
+    "prompt": "你最喜欢的小动物是什么？你知道这种小动物最喜欢吃/做什么吗？",
+    "summary": "丰富百科知识",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 37,
+    "type": "chat_topic",
+    "title": "目前为止你学到的最重要的是什",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天",
+      "谈收获"
+    ],
+    "prompt": "目前为止你学到的最重要的是什么？",
+    "summary": "谈收获",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 38,
+    "type": "chat_topic",
+    "title": "你觉得人为什么会说谎",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "你觉得人为什么会说谎？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 39,
+    "type": "chat_topic",
+    "title": "什么事",
+    "category": "安全与情绪",
+    "tags": [
+      "安全与情绪",
+      "亲子聊天"
+    ],
+    "prompt": "什么事，或者东西，会令你感到害怕呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 40,
+    "type": "chat_topic",
+    "title": "老师今天教什么新东西了吗",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "回顾知识"
+    ],
+    "prompt": "老师今天教什么新东西了吗？",
+    "summary": "回顾知识",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 41,
+    "type": "chat_topic",
+    "title": "如果你遇到麻烦",
+    "category": "安全与情绪",
+    "tags": [
+      "安全与情绪",
+      "亲子聊天",
+      "危机处理"
+    ],
+    "prompt": "如果你遇到麻烦，你希望我像谁一样来保护你？",
+    "summary": "危机处理",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 42,
+    "type": "chat_topic",
+    "title": "爸妈给你制定的生活学习规则",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "尊重孩子、参与家庭制度，孩子勇于表达"
+    ],
+    "prompt": "爸妈给你制定的生活学习规则，有哪条是你感觉不好的？",
+    "summary": "尊重孩子、参与家庭制度，孩子勇于表达",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 43,
+    "type": "chat_topic",
+    "title": "如果用三个词来形容爸爸妈妈",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "了解孩子心中的样子"
+    ],
+    "prompt": "如果用三个词来形容爸爸妈妈，你想用哪三个？",
+    "summary": "了解孩子心中的样子",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 44,
+    "type": "chat_topic",
+    "title": "你觉得家是什么样子的",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天",
+      "孩子心中对家的期待"
+    ],
+    "prompt": "你觉得家是什么样子的？",
+    "summary": "孩子心中对家的期待",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 45,
+    "type": "chat_topic",
+    "title": "如果你回家发现家里没有人",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "自我管理"
+    ],
+    "prompt": "如果你回家发现家里没有人，你会怎么办？",
+    "summary": "自我管理",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 46,
+    "type": "chat_topic",
+    "title": "你怎么知道别人是爱你的",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天"
+    ],
+    "prompt": "你怎么知道别人是爱你的？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 47,
+    "type": "chat_topic",
+    "title": "觉得害怕的时候",
+    "category": "安全与情绪",
+    "tags": [
+      "安全与情绪",
+      "亲子聊天",
+      "开动脑筋想办法"
+    ],
+    "prompt": "觉得害怕的时候，怎么才能变勇敢呢？",
+    "summary": "开动脑筋想办法",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 48,
+    "type": "chat_topic",
+    "title": "你最喜欢的绘本/故事/动画片",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "了解孩子喜好"
+    ],
+    "prompt": "你最喜欢的绘本/故事/动画片是什么？为什么？",
+    "summary": "了解孩子喜好",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 49,
+    "type": "chat_topic",
+    "title": "你最喜欢和爸爸/妈妈一起做什",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "规划能力"
+    ],
+    "prompt": "你最喜欢和爸爸/妈妈一起做什么事？",
+    "summary": "规划能力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 50,
+    "type": "chat_topic",
+    "title": "你最想送给爸爸(妈妈)的礼物",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天",
+      "表达爱"
+    ],
+    "prompt": "你最想送给爸爸(妈妈)的礼物是什么？",
+    "summary": "表达爱",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 51,
+    "type": "chat_topic",
+    "title": "你觉得爸爸妈妈有什么做的不好",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天",
+      "表达需求和想法"
+    ],
+    "prompt": "你觉得爸爸妈妈有什么做的不好的地方？或对你做过什么不正确的事？",
+    "summary": "表达需求和想法",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 52,
+    "type": "chat_topic",
+    "title": "要是我们一起出去玩",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "计划能力，小事让孩子做主，“听你的”"
+    ],
+    "prompt": "要是我们一起出去玩，你想去哪里啊？",
+    "summary": "计划能力，小事让孩子做主，“听你的”",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 53,
+    "type": "chat_topic",
+    "title": "宝贝学会什么新游戏了呀",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "输出，练表演能力"
+    ],
+    "prompt": "宝贝学会什么新游戏了呀？能给妈妈表演一下吗",
+    "summary": "输出，练表演能力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 54,
+    "type": "chat_topic",
+    "title": "你觉得什么是爱",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天"
+    ],
+    "prompt": "你觉得什么是爱？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 55,
+    "type": "chat_topic",
+    "title": "你能说出多少种家务活",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "生活观察"
+    ],
+    "prompt": "你能说出多少种家务活，越多越好？",
+    "summary": "生活观察",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 56,
+    "type": "chat_topic",
+    "title": "我们每个人说个小秘密",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "引导孩子说出隐私，排除心理隐患"
+    ],
+    "prompt": "我们每个人说个小秘密，我们来交换怎么样？",
+    "summary": "引导孩子说出隐私，排除心理隐患",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 57,
+    "type": "chat_topic",
+    "title": "在你心里谁最厉害",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天",
+      "理想自己"
+    ],
+    "prompt": "在你心里谁最厉害，谁是你的偶像？",
+    "summary": "理想自己",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 58,
+    "type": "chat_topic",
+    "title": "你非常努力踢球却输了一场重要",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天",
+      "抗挫折能力"
+    ],
+    "prompt": "你非常努力踢球却输了一场重要的比赛，你是什么心情？",
+    "summary": "抗挫折能力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 59,
+    "type": "chat_topic",
+    "title": "你最喜欢和谁一起玩",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "择友问题"
+    ],
+    "prompt": "你最喜欢和谁一起玩？为什么？",
+    "summary": "择友问题",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 60,
+    "type": "chat_topic",
+    "title": "你最喜欢的一首歌是什么",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天",
+      "输出兴趣、勇于表演"
+    ],
+    "prompt": "你最喜欢的一首歌是什么？可以唱给我听吗？",
+    "summary": "输出兴趣、勇于表演",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 61,
+    "type": "chat_topic",
+    "title": "如果有一天",
+    "category": "安全与情绪",
+    "tags": [
+      "安全与情绪",
+      "亲子聊天",
+      "安全意识"
+    ],
+    "prompt": "如果有一天，我被怪兽抓走了，你会怎么来救我？",
+    "summary": "安全意识",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 62,
+    "type": "chat_topic",
+    "title": "什么事会让你很生气",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "什么事会让你很生气？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 63,
+    "type": "chat_topic",
+    "title": "今天有接受过谁的帮助吗",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "今天有接受过谁的帮助吗？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 64,
+    "type": "chat_topic",
+    "title": "你拥有的最好的东西是什么",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天",
+      "谈拥有，感恩"
+    ],
+    "prompt": "你拥有的最好的东西是什么？",
+    "summary": "谈拥有，感恩",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 65,
+    "type": "chat_topic",
+    "title": "长大以后你想做什么",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天",
+      "谈梦想"
+    ],
+    "prompt": "长大以后你想做什么？",
+    "summary": "谈梦想",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 66,
+    "type": "chat_topic",
+    "title": "别的小朋友是怎么评价你的",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "自我印象"
+    ],
+    "prompt": "别的小朋友是怎么评价你的，你感觉他们说的对吗？",
+    "summary": "自我印象",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 67,
+    "type": "chat_topic",
+    "title": "什么时候你感觉别人是在骗你",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天",
+      "社交成熟度"
+    ],
+    "prompt": "什么时候你感觉别人是在骗你？",
+    "summary": "社交成熟度",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 68,
+    "type": "chat_topic",
+    "title": "如果你正在用电饭煲做米饭",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "自理能力"
+    ],
+    "prompt": "如果你正在用电饭煲做米饭，停电了该怎么办？",
+    "summary": "自理能力",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 69,
+    "type": "chat_topic",
+    "title": "你听过最棒的赞美是什么",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "你听过最棒的赞美是什么？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 70,
+    "type": "chat_topic",
+    "title": "当我拥抱你的时候",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天"
+    ],
+    "prompt": "当我拥抱你的时候，你是什么感觉呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 71,
+    "type": "chat_topic",
+    "title": "你今天有帮爸爸妈妈/老师/同",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天",
+      "责任感，热心，爱心"
+    ],
+    "prompt": "你今天有帮爸爸妈妈/老师/同学做哪些事情？",
+    "summary": "责任感，热心，爱心",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 72,
+    "type": "chat_topic",
+    "title": "你觉得爸爸帅吗",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天",
+      "孩子眼中爸爸形象"
+    ],
+    "prompt": "你觉得爸爸帅吗？什么时候最帅？",
+    "summary": "孩子眼中爸爸形象",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 73,
+    "type": "chat_topic",
+    "title": "今天有遇到让你感到不公平的事",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "今天有遇到让你感到不公平的事情吗？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 74,
+    "type": "chat_topic",
+    "title": "在学校里你最喜欢的同学是谁",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天",
+      "择友"
+    ],
+    "prompt": "在学校里你最喜欢的同学是谁？最喜欢和 ta 一起做什么？",
+    "summary": "择友",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 75,
+    "type": "chat_topic",
+    "title": "你觉得自己最大的缺点是什么",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "你觉得自己最大的缺点是什么？什么事你做不好？",
+    "summary": "自我认知",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 76,
+    "type": "chat_topic",
+    "title": "如果可以重来",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "如果可以重来，你希望可以改变哪些事？做哪些不同的事？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 77,
+    "type": "chat_topic",
+    "title": "你经历过的最幸运/好玩/开心",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "你经历过的最幸运/好玩/开心的事情是什么？",
+    "summary": "了解孩子",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 78,
+    "type": "chat_topic",
+    "title": "今天有什么开心的/好玩的",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "今天有什么开心的/好玩的，或者生气的事情呢？",
+    "summary": "了解孩子",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 79,
+    "type": "chat_topic",
+    "title": "你觉得自己最擅长做什么啊",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "你觉得自己最擅长做什么啊？",
+    "summary": "自我认知",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 80,
+    "type": "chat_topic",
+    "title": "你最喜欢的运动是什么",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "了解喜好"
+    ],
+    "prompt": "你最喜欢的运动是什么？为什么呢？",
+    "summary": "了解喜好",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 81,
+    "type": "chat_topic",
+    "title": "你最喜欢做什么事情呢",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "你最喜欢做什么事情呢？",
+    "summary": "了解孩子",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 82,
+    "type": "chat_topic",
+    "title": "你能做些什么来帮助别人呢",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "你能做些什么来帮助别人呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 83,
+    "type": "chat_topic",
+    "title": "你最想要什么生日礼物",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "了解喜好"
+    ],
+    "prompt": "你最想要什么生日礼物？",
+    "summary": "了解喜好",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 84,
+    "type": "chat_topic",
+    "title": "你最喜欢过什么节啊",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "了解孩子，扩充知识"
+    ],
+    "prompt": "你最喜欢过什么节啊？ 为什么？",
+    "summary": "了解孩子，扩充知识",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 85,
+    "type": "chat_topic",
+    "title": "一天中什么时候你感到最快乐",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "一天中什么时候你感到最快乐？",
+    "summary": "了解孩子",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 86,
+    "type": "chat_topic",
+    "title": "你最担心的是什么",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "了解孩子内心的担忧"
+    ],
+    "prompt": "你最担心的是什么？",
+    "summary": "了解孩子内心的担忧",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 87,
+    "type": "chat_topic",
+    "title": "今天有没有遇到什么困难",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天",
+      "了解孩子情况"
+    ],
+    "prompt": "今天有没有遇到什么困难？需要妈妈帮助吗？",
+    "summary": "了解孩子情况",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 88,
+    "type": "chat_topic",
+    "title": "你说人为什么要吵架争论",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "你说人为什么要吵架争论，他们为什么不能心平气和的讨论呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 89,
+    "type": "chat_topic",
+    "title": "你最喜欢什么职业",
+    "category": "规则与能力",
+    "tags": [
+      "规则与能力",
+      "亲子聊天",
+      "了解孩子兴趣"
+    ],
+    "prompt": "你最喜欢什么职业？你觉得从事这种职业最有趣的是什么？",
+    "summary": "了解孩子兴趣",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 90,
+    "type": "chat_topic",
+    "title": "最近有什么压力吗",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "最近有什么压力吗？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 91,
+    "type": "chat_topic",
+    "title": "当你特别伤心难过的时候",
+    "category": "安全与情绪",
+    "tags": [
+      "安全与情绪",
+      "亲子聊天"
+    ],
+    "prompt": "当你特别伤心难过的时候，你最想做什么？你觉得做什么能让自己好起来呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 92,
+    "type": "chat_topic",
+    "title": "如果你能改变自己",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "如果你能改变自己，你最想要改变哪个地方？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 93,
+    "type": "chat_topic",
+    "title": "假如你可以变成另一个人一天",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天"
+    ],
+    "prompt": "假如你可以变成另一个人一天，你最想变成谁？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 94,
+    "type": "chat_topic",
+    "title": "你都怎么关心别人的呢",
+    "category": "社交与共情",
+    "tags": [
+      "社交与共情",
+      "亲子聊天"
+    ],
+    "prompt": "你都怎么关心别人的呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 95,
+    "type": "chat_topic",
+    "title": "以前经历过的事",
+    "category": "了解孩子",
+    "tags": [
+      "了解孩子",
+      "亲子聊天"
+    ],
+    "prompt": "以前经历过的事，哪些让你印象深刻呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 96,
+    "type": "chat_topic",
+    "title": "你有什么本领可以教别人吗",
+    "category": "表达与想象",
+    "tags": [
+      "表达与想象",
+      "亲子聊天"
+    ],
+    "prompt": "你有什么本领可以教别人吗？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 97,
+    "type": "chat_topic",
+    "title": "你觉得什么是幸福",
+    "category": "幸福与家庭",
+    "tags": [
+      "幸福与家庭",
+      "亲子聊天"
+    ],
+    "prompt": "你觉得什么是幸福？怎样才能拥有幸福？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 98,
+    "type": "chat_topic",
+    "title": "如果你能回到 3 年前看看自",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "如果你能回到 3 年前看看自己，那你会给当时的你什么建议呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 99,
+    "type": "chat_topic",
+    "title": "你最自豪的事情是什么",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "你最自豪的事情是什么？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  },
+  {
+    "id": 100,
+    "type": "chat_topic",
+    "title": "你觉得是什么让一个人变得聪明",
+    "category": "自我认知",
+    "tags": [
+      "自我认知",
+      "亲子聊天"
+    ],
+    "prompt": "你觉得是什么让一个人变得聪明有智慧呢？",
+    "summary": "用轻松提问打开孩子表达。",
+    "occasion": "睡前、饭后、散步或接送路上",
+    "tip": "多听少评判，先接住孩子的表达，聊完只做一句温和引导。",
+    "riskLevel": "normal"
+  }
+];
+  </script>
+  <script>
+    const app = document.querySelector("#app");
+    const toast = document.querySelector("#toast");
+    const state = { view:"home", query:"", searchType:"all", browseType:"response", selectedKey:null };
+    const HOT_RESPONSE_CHIPS = [
+      { label:"写作业", query:"写作业" },
+      { label:"不想上学", query:"不想上学" },
+      { label:"撒谎", query:"撒谎" },
+      { label:"顶嘴", query:"凭什么管我" },
+      { label:"被欺负", query:"欺负" },
+      { label:"早恋", query:"早恋" },
+      { label:"情绪", query:"不开心" }
+    ];
+    const HOT_TOPIC_CHIPS = ["秘密","幸福","朋友","害怕","梦想","压力"];
+    function itemKey(item) { return item.type + ":" + item.id; }
+    function allItems() { return [...RESPONSE_CARDS, ...CHAT_TOPICS]; }
+    function setView(view, patch = {}) { Object.assign(state, patch, { view }); render(); window.scrollTo({ top:0, behavior:"smooth" }); }
+    function typeLabel(item) { return item.type === "response_card" ? "应对话术" : "聊天话题"; }
+    function typeClass(item) { return item.type === "response_card" ? "" : "topic"; }
+    function showToast(text = "已复制") { toast.textContent = text; toast.classList.add("show"); clearTimeout(showToast.timer); showToast.timer = setTimeout(() => toast.classList.remove("show"), 1400); }
+    async function copyText(text) { if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(text); } else { const textarea = document.createElement("textarea"); textarea.value = text; document.body.appendChild(textarea); textarea.select(); document.execCommand("copy"); textarea.remove(); } showToast("已复制"); }
+    function searchableText(item) { return [item.title,item.category,item.summary,item.tip,...(item.tags||[]),...(item.scripts||[]),item.prompt||"",item.occasion||""].join(" ").toLowerCase(); }
+    function searchItems(query, type = "all") { const normalized = query.trim().toLowerCase(); const pool = allItems().filter(item => type === "all" || item.type === type); if (!normalized) return pool.slice(0, 24); return pool.filter(item => searchableText(item).includes(normalized)); }
+    function topbar(title, showBack = true) { return `<div class="topbar">${showBack ? '<button class="back-btn" data-back type="button">‹</button>' : ''}<strong>${title}</strong></div>`; }
+    function bindBack() { const btn = app.querySelector("[data-back]"); if (btn) btn.addEventListener("click", () => setView("home")); }
+    function cardButton(item) { return `<button class="result-card" type="button" data-key="${itemKey(item)}"><div class="meta"><span class="pill ${typeClass(item)}">${typeLabel(item)}</span><span>#${item.id}</span><span>${item.category}</span></div><h3>${item.title}</h3><p class="summary">${item.summary}</p></button>`; }
+    function waterfallButton(item) { return `<button class="waterfall-item" type="button" data-key="${itemKey(item)}"><div class="meta"><span class="pill ${typeClass(item)}">${typeLabel(item)}</span><span>#${item.id}</span></div><h3>${item.title}</h3><p class="summary">${item.summary}</p></button>`; }
+    function bindCards() { app.querySelectorAll("[data-key]").forEach(btn => btn.addEventListener("click", () => setView("detail", { selectedKey:btn.dataset.key }))); }
+    function renderHome() { app.innerHTML = `${topbar("幸福驿站", false)}<section class="hero"><h1 class="hero-title">亲子沟通话术速查卡</h1><p class="hero-copy">孩子的问题来的很突然，快速找到一句稳住关系的话。</p><div class="stats"><div class="stat"><strong>72</strong><span>应对话术</span></div><div class="stat"><strong>100</strong><span>聊天话题</span></div></div><div class="entry-grid"><button class="entry-button primary" data-action="search" type="button"><strong>搜索</strong><span>按关键词找到当下能用的一张卡。</span></button><button class="entry-button secondary" data-action="browse" type="button"><strong>0-18岁亲子问题100问 <em class="entry-cta">点击查看</em></strong><span>按分类浏览常见亲子问题和亲子聊天100话题。</span></button></div><p class="soft-note">先共情，再引导。高风险场景请及时寻求专业帮助。</p></section>`; app.querySelector("[data-action=search]").addEventListener("click", () => setView("search")); app.querySelector("[data-action=browse]").addEventListener("click", () => setView("browse")); }
+    function renderSearch() { const results = searchItems(state.query, state.searchType); app.innerHTML = `${topbar("搜索")}<section class="toolbar"><input class="search-box" value="${state.query.replace(/"/g, "&quot;")}" placeholder="输入关键词，如 写作业、秘密、朋友"><div class="segmented"><button class="seg-btn ${state.searchType==="all"?"active":""}" data-type="all" type="button">全部</button><button class="seg-btn ${state.searchType==="response_card"?"active":""}" data-type="response_card" type="button">应对话术</button><button class="seg-btn ${state.searchType==="chat_topic"?"active":""}" data-type="chat_topic" type="button">亲子聊天100话题</button></div></section><div class="chips">${["写作业","撒谎","欺负","早恋","秘密","幸福","朋友","害怕","梦想"].map(k => `<button class="chip" data-keyword="${k}" type="button">${k}</button>`).join("")}</div><section><h2 class="section-title">搜索结果 ${results.length}</h2><div class="card-list two">${results.map(cardButton).join("") || '<div class="empty">换个关键词试试</div>'}</div></section>`; bindBack(); bindCards(); const input = app.querySelector(".search-box"); input.focus(); input.setSelectionRange(input.value.length, input.value.length); input.addEventListener("input", event => { state.query = event.target.value; renderSearch(); }); app.querySelectorAll("[data-type]").forEach(btn => btn.addEventListener("click", () => { state.searchType = btn.dataset.type; renderSearch(); })); app.querySelectorAll("[data-keyword]").forEach(btn => btn.addEventListener("click", () => { state.query = btn.dataset.keyword; renderSearch(); })); }
+    function groupByCategory(items, categories) { return categories.map(category => [category, items.filter(item => item.category === category)]); }
+    function renderBrowse() { const isResponse = state.browseType === "response"; const groups = isResponse ? groupByCategory(RESPONSE_CARDS, RESPONSE_CATEGORIES) : groupByCategory(CHAT_TOPICS, TOPIC_CATEGORIES); app.innerHTML = `${topbar("寻找")}<section class="toolbar"><div class="segmented"><button class="seg-btn ${isResponse?"active":""}" data-browse="response" type="button">常见问题</button><button class="seg-btn ${!isResponse?"active":""}" data-browse="topic" type="button">亲子聊天100话题</button></div></section>${groups.map(([category, items]) => `<section class="category-block"><div class="category-head"><h2>${category}</h2><span>${items.length} 张</span></div><div class="waterfall-list">${items.map(waterfallButton).join("")}</div></section>`).join("")}`; bindBack(); bindCards(); app.querySelectorAll("[data-browse]").forEach(btn => btn.addEventListener("click", () => { state.browseType = btn.dataset.browse; renderBrowse(); })); }
+    function renderDetail() { const item = allItems().find(candidate => itemKey(candidate) === state.selectedKey); if (!item) { setView("home"); return; } const isResponse = item.type === "response_card"; const copyValue = isResponse ? item.scripts.join("\n") : item.prompt; app.innerHTML = `${topbar(isResponse ? "应对话术" : "聊天话题")}<article class="detail"><div class="meta"><span class="pill ${typeClass(item)}">${typeLabel(item)}</span><span>#${item.id}</span><span>${item.category}</span></div><h1>${item.title}</h1><p class="summary">${item.summary}</p>${item.riskLevel === "urgent" ? '<div class="risk-note">这个场景需要谨慎处理。话术只能用于初步安抚和沟通，必要时请及时联系学校、警方、医生、心理或儿童保护相关专业机构。</div>' : ""}${isResponse ? `<h2 class="section-title">可以这样说</h2><ul class="script-list">${item.scripts.map(script => `<li>${script}</li>`).join("")}</ul>` : `<h2 class="section-title">可以这样问</h2><ul class="script-list"><li>${item.prompt}</li></ul><p class="summary">适合场景：${item.occasion}</p>`}<p class="soft-note">${item.tip}</p><button class="copy-btn" type="button">一键复制</button></article>`; bindBack(); app.querySelector(".copy-btn").addEventListener("click", () => copyText(copyValue)); }
+    function openResponseSearch(query = "") { state.query = query; state.searchType = "response_card"; setView("search"); }
+    function renderHome() {
+      const previews = RESPONSE_CARDS.filter(item => [3, 5, 8, 44, 53, 67, 73, 85, 112].includes(item.id));
+      app.innerHTML = `${topbar("大春之道幸福驿站", false)}<section class="hero"><h1 class="hero-title">亲子沟通话术速查卡</h1><p class="hero-copy">孩子的问题来的很突然，快速找到一句稳住关系的话。</p><section class="primary-search-panel"><div class="home-search-row"><input class="home-search-input" placeholder="孩子现在遇到什么问题？" aria-label="孩子现在遇到什么问题"><button class="home-search-button" data-home-search type="button">搜索话术</button></div><div class="quick-grid">${HOT_RESPONSE_CHIPS.map(chip => `<button class="chip" data-hot-label="${chip.label}" data-hot-query="${chip.query}" type="button">${chip.label}</button>`).join("")}</div></section><section class="answer-first-panel"><div class="category-head"><h2>按常见问题寻找</h2><span>${RESPONSE_CARDS.length}个问题</span></div><button class="entry-button secondary" data-action="browse" type="button"><strong>0-18岁亲子问题100问 <em class="entry-cta">点击查看</em></strong><span>不知道怎么搜时，从学习、手机、校园、社交、青春期、父母成长等分类里找。</span></button><div class="preview-problems">${previews.map(item => `<button class="preview-problem" data-key="${itemKey(item)}" type="button"><strong>${item.title}</strong><span>${item.category}</span></button>`).join("")}</div></section><section class="aux-topic-panel"><h2>亲子聊天100话题</h2><p>平时关系维护使用，适合睡前、饭后、散步时轻松聊一题。</p><button class="mini-btn" data-topic-entry type="button">查看聊天话题</button></section></section>`;
+      const homeInput = app.querySelector(".home-search-input");
+      app.querySelector("[data-home-search]").addEventListener("click", () => openResponseSearch(homeInput.value));
+      homeInput.addEventListener("keydown", event => { if (event.key === "Enter") openResponseSearch(homeInput.value); });
+      app.querySelectorAll("[data-hot-query]").forEach(btn => btn.addEventListener("click", () => openResponseSearch(btn.dataset.hotQuery)));
+      app.querySelector("[data-action=browse]").addEventListener("click", () => setView("browse", { browseType:"response" }));
+      app.querySelector("[data-topic-entry]").addEventListener("click", () => setView("browse", { browseType:"topic" }));
+      bindCards();
+    }
+    function renderSearch() {
+      const results = searchItems(state.query, state.searchType);
+      const title = state.searchType === "chat_topic" ? "搜索聊天话题" : "搜索常见问题话术";
+      const chips = state.searchType === "chat_topic" ? HOT_TOPIC_CHIPS.map(label => ({ label, query:label })) : [...HOT_RESPONSE_CHIPS, { label:"自杀", query:"自杀" }];
+      app.innerHTML = `${topbar(title)}<section class="toolbar"><input class="search-box" value="${state.query.replace(/"/g, "&quot;")}" placeholder="输入关键词，如 写作业、手机、青春期"><div class="segmented"><button class="seg-btn ${state.searchType==="response_card"?"active":""}" data-type="response_card" type="button">常见问题话术</button><button class="seg-btn ${state.searchType==="chat_topic"?"active":""}" data-type="chat_topic" type="button">亲子聊天100话题</button></div></section><div class="chips">${chips.map(chip => `<button class="chip" data-keyword="${chip.query}" type="button">${chip.label}</button>`).join("")}</div><section><h2 class="section-title">搜索结果 ${results.length}</h2><div class="card-list two">${results.map(cardButton).join("") || '<div class="empty">换个关键词试试</div>'}</div></section>`;
+      bindBack(); bindCards();
+      const input = app.querySelector(".search-box");
+      input.focus(); input.setSelectionRange(input.value.length, input.value.length);
+      input.addEventListener("input", event => { state.query = event.target.value; renderSearch(); });
+      app.querySelectorAll("[data-type]").forEach(btn => btn.addEventListener("click", () => { state.searchType = btn.dataset.type; state.query = ""; renderSearch(); }));
+      app.querySelectorAll("[data-keyword]").forEach(btn => btn.addEventListener("click", () => { state.query = btn.dataset.keyword; renderSearch(); }));
+    }
+    function renderBrowse() {
+      const isResponse = state.browseType !== "topic";
+      const groups = isResponse ? groupByCategory(RESPONSE_CARDS, RESPONSE_CATEGORIES) : groupByCategory(CHAT_TOPICS, TOPIC_CATEGORIES);
+      app.innerHTML = `${topbar(isResponse ? "按常见问题寻找" : "亲子聊天100话题")}<section class="toolbar"><div class="segmented"><button class="seg-btn ${isResponse?"active":""}" data-browse="response" type="button">常见问题 ${RESPONSE_CARDS.length} 问</button><button class="seg-btn ${!isResponse?"active":""}" data-browse="topic" type="button">亲子聊天100话题</button></div></section>${groups.map(([category, items]) => `<section class="category-block"><div class="category-head"><h2>${category}</h2><span>${items.length} 张</span></div><div class="waterfall-list">${items.map(waterfallButton).join("")}</div></section>`).join("")}`;
+      bindBack(); bindCards();
+      app.querySelectorAll("[data-browse]").forEach(btn => btn.addEventListener("click", () => { state.browseType = btn.dataset.browse; renderBrowse(); }));
+    }
+    function render() { if (state.view === "home") renderHome(); if (state.view === "search") renderSearch(); if (state.view === "browse") renderBrowse(); if (state.view === "detail") renderDetail(); }
+    render();
+  </script>
+</body>
+</html>
